@@ -60,11 +60,7 @@
               }
             ],
             "styles": [
-              "projects/zenplay/src/styles.scss",
-              "node_modules/@swimlane/ngx-datatable/assets/icons.css",
-              "node_modules/@swimlane/ngx-datatable/themes/material.css",
-              "node_modules/@swimlane/ngx-datatable/themes/bootstrap.css",
-              "node_modules/@swimlane/ngx-datatable/themes/dark.css"
+              "projects/zenplay/src/styles.scss"
             ],
             "scripts": []
           },
@@ -119,11 +115,7 @@
               }
             ],
             "styles": [
-              "projects/zenplay/src/styles.scss",
-              "node_modules/@swimlane/ngx-datatable/assets/icons.css",
-              "node_modules/@swimlane/ngx-datatable/themes/material.css",
-              "node_modules/@swimlane/ngx-datatable/themes/bootstrap.css",
-              "node_modules/@swimlane/ngx-datatable/themes/dark.css"
+              "projects/zenplay/src/styles.scss"
             ],
             "scripts": []
           }

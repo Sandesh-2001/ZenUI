@@ -1,10 +1,8 @@
-<!-- {{toastrStack| json}} -->
 
 @for (item of toastrStack; track $index;let index=$index) {
-  
-  <div  class="toastr-container" id="toastr__container" #toastrContainer [ngClass]="item.type">
-      <span>{{ item.message }} {{index}}</span>
+  <div  class="toastr-container" [id]="'toastr__container'+index" #toastrContainer [ngClass]="item.type">
+      <span>{{ item.message }}</span>
+      <zen-button (clickEvent)="onRemoveToastr(item.id)" class="toastr__close" [size]="'sm'" [color]="''"> <span  >X</span></zen-button> 
   </div>
 
 }
-  
