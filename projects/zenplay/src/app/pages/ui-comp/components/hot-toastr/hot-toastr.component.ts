@@ -10,8 +10,12 @@ import { ZenUiModule, ToastrService } from '../../../../../../../zenui/src/publi
 export class HotToastrComponent {
   constructor(private toastrService: ToastrService){
   }
-  
+  cnt=0
   openToastr(){ 
-    this.toastrService.showToastr('Hello this is my first toastr', "error");
+    this.cnt++;
+    this.toastrService.showToastr('Hello this is my first toastr'+this.cnt, "error",5000);
+    setTimeout(() => {
+      this.cnt=1
+    }, 4000);
   }
 }

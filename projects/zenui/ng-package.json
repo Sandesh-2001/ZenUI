@@ -4,5 +4,9 @@
   "lib": {
     "entryFile": "src/public-api.ts"
   },
+<<<<<<< HEAD
   "allowedNonPeerDependencies": ["ngx-colors"]
+=======
+  "allowedNonPeerDependencies": ["ngx-colors","@swimlane/ngx-datatable","@angular/cdk"]
+>>>>>>> dev-sandesh-work
 }
