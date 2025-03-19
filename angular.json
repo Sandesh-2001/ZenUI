@@ -65,7 +65,7 @@
               }
             ],
             "styles": [
-              "projects/zenplay/src/styles.css"
+              "projects/zenplay/src/styles.scss"
             ],
             "scripts": []
           },
@@ -123,7 +123,7 @@
               }
             ],
             "styles": [
-              "projects/zenplay/src/styles.css"
+              "projects/zenplay/src/styles.scss"
             ],
             "scripts": []
           }
