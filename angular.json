@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/zenui",
       "sourceRoot": "projects/zenui/src",
-      "prefix": "lib",
+      "prefix": "zen",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
