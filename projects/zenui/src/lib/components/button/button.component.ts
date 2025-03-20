@@ -14,7 +14,7 @@ export class ButtonComponent implements OnInit {
   @Input("classes") classes: string= "";
   @Input("type") type: string= "button";    
   @Input("disabled") disabled: boolean= false;
-  @Input("color") color: "primary" | "secondary" | "danger"= "primary"; 
+  @Input("color") color: "primary" | "secondary" | "danger" |""= "primary"; 
   @Input("size") size: "sm" | "md" | "lg" |  "full"= "md";
   @Input("icon") icon: string= "";
   @Input("iconPosition") iconPosition: string= "left";

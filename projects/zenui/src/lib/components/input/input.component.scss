@@ -1,0 +1,41 @@
+
+
+div{    
+    input {
+        padding: 6px;
+        border: 1px solid #e7dfdf;
+        border-radius: 5px;
+        font-size: 14px;
+        outline: none;
+        transition: border-color 0.3s ease;
+      
+        &:focus {
+          border-color: #0d6efd;
+        }
+      
+        &.sm {
+          padding: 6px;
+          font-size: 12px;
+        }
+        
+        &.md {
+            padding: 8px;
+            font-size: 14px;
+        }
+      
+        &.lg {
+          padding: 12px;
+          font-size: 16px;
+        }
+    
+        &.full {
+            font-size: 18px;
+            width: -webkit-fill-available;
+          }
+      
+        &[disabled] {
+          background-color: #f4f4f4;
+          cursor: not-allowed;
+        }
+      }
+  }

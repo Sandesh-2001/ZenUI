@@ -15,6 +15,9 @@ import { DialogComponent } from './components/dialog/dialog/dialog.component';
 import { DialogBodyComponent } from './components/dialog/dialog-body/dialog-body.component';
 import { DialogHeaderComponent } from './components/dialog/dialog-header/dialog-header.component';
 import { DialogFooterComponent } from './components/dialog/dialog-footer/dialog-footer.component';
+import { InputComponent } from './components/input/input.component';
+import { RadioComponent } from './components/radio/radio.component';
+import { PasswordComponent } from './components/password/password.component';
 
 const components = [
   ButtonComponent,
@@ -34,6 +37,9 @@ const components = [
   DialogBodyComponent,
   DialogHeaderComponent,
   DialogFooterComponent,
+  InputComponent,
+  PasswordComponent,
+  RadioComponent,
 ]
 
 @NgModule({
