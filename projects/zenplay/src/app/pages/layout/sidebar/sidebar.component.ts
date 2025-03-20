@@ -41,5 +41,10 @@ export class SidebarComponent {
       title: "Select",
       icon: "fa fa-circle"
     },
+    {
+      path: "/dashboard/checkbox",
+      title: "Checkbox",
+      icon: "fa fa-circle"
+    },
   ];
 }

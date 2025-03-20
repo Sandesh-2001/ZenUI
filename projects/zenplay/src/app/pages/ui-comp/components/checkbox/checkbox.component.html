@@ -1,0 +1,24 @@
+<h1>Template Driven Form</h1>
+<form #myForm="ngForm" (ngSubmit)="submitTemplateDrivenForm(myForm.value)">
+  <div>
+    <zen-checkbox [id]="'isChecked'" [(ngModel)]="isChecked" name="agree" />
+    <label for="isChecked">template driven form</label>
+  </div>
+  <zen-button [type]="'submit'">Submit</zen-button>
+</form>
+
+<h1>Reactive Form</h1>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  @for (item of skills; track $index) {
+  <div>
+    <zen-checkbox
+      [id]="item"
+      formControlName="acceptTerms"
+    ></zen-checkbox>
+    <label for="{{item}}">{{item}}</label>
+  </div>
+  }
+  <div>
+    <zen-button [type]="'submit'">Submit</zen-button>
+  </div>
+</form>

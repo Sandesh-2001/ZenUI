@@ -3,8 +3,10 @@ import { DashboardComponent } from './pages/layout/dashboard/dashboard.component
 import { ButtonComponent } from './pages/ui-comp/components/button/button.component';
 import { FileUploadComponent } from './pages/ui-comp/components/file-upload/file-upload.component';
 import { CardComponent } from './pages/ui-comp/components/card/card.component';
-import { ChipsComponent } from "./pages/ui-comp/components/chips/chips.component";
+import { ChipsComponent } from './pages/ui-comp/components/chips/chips.component';
 import { DialogComponent } from './pages/ui-comp/components/dialog/dialog.component';
+import { SelectComponent } from './pages/ui-comp/components/select/select.component';
+import { CheckboxComponent } from './pages/ui-comp/components/checkbox/checkbox.component';
 
 export const routes: Routes = [
   {
@@ -29,13 +31,21 @@ export const routes: Routes = [
         component: CardComponent,
       },
       {
-        path : "chips",
-        component : ChipsComponent
+        path: 'chips',
+        component: ChipsComponent,
       },
       {
-        path: "dialog",
-        component  : DialogComponent
-    }
+        path: 'dialog',
+        component: DialogComponent,
+      },
+      {
+        path: 'select',
+        component: SelectComponent,
+      },
+      {
+        path: 'checkbox',
+        component: CheckboxComponent,
+      },
     ],
-  }
+  },
 ];
