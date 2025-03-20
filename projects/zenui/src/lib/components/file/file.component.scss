@@ -1,0 +1,38 @@
+.dropzone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    transition: border 0.3s ease-in-out;
+  
+    &.drag-over {
+      border-color: #007bff;
+      background-color: rgba(107, 107, 107, 0.1);
+    }
+  
+    i {
+      font-size: 40px;
+      color: #6b7280;
+    }
+  
+    p {
+      margin-top: 10px;
+      color: #555;
+    }
+  
+    .hidden-file-input {
+      display: none;
+    }
+
+    .allowed-files {
+        font-size: 14px;
+        color: #666;
+        margin-top: 5px;
+      }
+      
+  }
+  
