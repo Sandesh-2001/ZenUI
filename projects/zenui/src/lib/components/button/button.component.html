@@ -1,7 +1,7 @@
 <button [type]="type" [disabled]="disabled"  [class]="btnClasses" [style]="style" (click)="onClickButton($event)">
     @if(text){
-        {{text}}
-    } @else {
         <ng-content></ng-content>
+    } @else {
+        {{text}}
     }
 </button>
