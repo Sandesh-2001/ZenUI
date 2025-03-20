@@ -22,8 +22,8 @@ export class SidebarComponent {
       icon: "fa fa-circle"
     },
     {
-      path: "/dashboard/radio",
-      title: "Radio",
+      path: "/dashboard/dialog",
+      title: "Dialog",
       icon: "fa fa-circle"
     },
     {
