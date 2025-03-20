@@ -1,1 +1,7 @@
-<button style="border:2px solid red; padding: 4px" >Submit</button>
+<button [type]="type" [disabled]="disabled"  [class]="btnClasses" [style]="style" (click)="onClickButton($event)">
+    @if(text){
+        {{text}}
+    } @else {
+        <ng-content></ng-content>
+    }
+</button>
