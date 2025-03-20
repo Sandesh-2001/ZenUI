@@ -50,6 +50,11 @@ export class SidebarComponent {
       path: 'radio',
       title: "Radio",
       icon: ""
-    }
+    },
+    {
+      path: "/dashboard/checkbox",
+      title: "Checkbox",
+      icon: "fa fa-circle"
+    },
   ];
 }
