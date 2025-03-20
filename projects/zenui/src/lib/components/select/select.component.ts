@@ -10,16 +10,16 @@ import { ControlValueAccessor, FormsModule, NgControl } from '@angular/forms';
   styleUrl: './select.component.scss',
 })
 export class SelectComponent implements ControlValueAccessor {
-  @Input() options: { label: string; value: string }[] = [];
+  @Input({ required : true }) options: { label: string; value: string }[] = [];
   @Input() placeholder: string = 'Select option';
   @Input() width: string = '100%';
   @Input() classList: string = '';
   @Input() styles: string = '';
   @Input() size: 'sm' | 'md' | 'lg' = 'md';
   @Input() defaultValue: string = '';
+  @Input() disable: boolean = true;
 
   value: string = '';
-  disabled = false;
   onChange: (value: string) => void = () => {};
   onTouched: () => void = () => {};
 
@@ -49,7 +49,7 @@ export class SelectComponent implements ControlValueAccessor {
   }
 
   setDisabledState(isDisabled: boolean): void {
-    this.disabled = isDisabled;
+    this.disable = isDisabled;
   }
 
   handleChange(event: Event) {

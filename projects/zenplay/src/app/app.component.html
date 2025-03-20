@@ -1,2 +1,10 @@
-{{title}}
-<router-outlet />
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <zen-select
+    formControlName="skills"
+    [options]="[
+      { label: 'Angular', value: 'angular' },
+      { label: 'React', value: 'react' }
+    ]"
+  ></zen-select>
+  <button [style]="{marginTop : '10px'}">Submit</button>
+</form>
