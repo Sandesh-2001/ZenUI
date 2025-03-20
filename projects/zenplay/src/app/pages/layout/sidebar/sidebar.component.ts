@@ -37,9 +37,19 @@ export class SidebarComponent {
       icon: "fa fa-circle"
     },
     {
-      path: "/dashboard/select",
-      title: "Select",
+      path: "/dashboard/input",
+      title: "Input",
       icon: "fa fa-circle"
     },
+    {
+      path: 'password',
+      title: "Password",
+      icon: ""
+    },
+    {
+      path: 'radio',
+      title: "Radio",
+      icon: ""
+    }
   ];
 }
