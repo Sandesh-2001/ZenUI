@@ -1,0 +1,27 @@
+.sidebar {
+    border-right: 2px solid gray;
+    height: 100vh;
+    text-align: left;
+    padding: 0px 10px;
+    ul{
+        padding: 0px;
+        &.sidebar-links{
+            list-style: none;
+            // padding: 4px;
+            :hover{
+                background-color: gray;
+                border-radius: 4px;
+            }
+            li{
+                &.sidebar-link{
+                  margin: 10px 0px;  
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+
+    }
+}

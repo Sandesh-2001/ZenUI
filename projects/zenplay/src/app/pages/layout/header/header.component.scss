@@ -1,12 +1,13 @@
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 0 20px
+    padding: 4px;
+    border-bottom: 2px solid #f1f1f1;
 }
 
 .nav-links{
-    display: block;
-    gap: 5px;
-    width: 100%;
-    border-bottom: 2px solid #f1f1f1;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
 }
+

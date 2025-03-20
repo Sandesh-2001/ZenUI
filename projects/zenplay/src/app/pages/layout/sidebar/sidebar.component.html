@@ -1,0 +1,14 @@
+<aside class="sidebar">
+    <ul class="sidebar-links" >
+        @for(link of links;track link.path){
+            <li class="sidebar-link">
+                <a [routerLink]="link.path">
+                    <!-- <img src="/button" alt="User"> -->
+                    <span>{{link.title}}</span>
+                </a>
+            </li>
+
+        }
+        
+    </ul>
+</aside>
