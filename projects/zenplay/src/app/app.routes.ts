@@ -4,6 +4,8 @@ import { ButtonComponent } from './pages/ui-comp/components/button/button.compon
 import { FileUploadComponent } from './pages/ui-comp/components/file-upload/file-upload.component';
 import { CardComponent } from './pages/ui-comp/components/card/card.component';
 import { ChipsComponent } from "./pages/ui-comp/components/chips/chips.component";
+import { SelectComponent } from './pages/ui-comp/components/select/select.component';
+import { CheckboxComponent } from "./pages/ui-comp/components/checkbox/checkbox.component";
 
 export const routes: Routes = [
   {
@@ -30,6 +32,14 @@ export const routes: Routes = [
       {
         path : "chips",
         component : ChipsComponent
+      },
+      {
+        path : "select",
+        component : SelectComponent
+      },
+      {
+        path : "checkbox",
+        component : CheckboxComponent
       }
     ],
   },

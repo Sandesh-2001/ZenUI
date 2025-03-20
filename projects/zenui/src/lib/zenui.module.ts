@@ -11,6 +11,7 @@ import { CardContentComponent } from './components/card/card-content/card-conten
 import { CardTitleComponent } from './components/card/card-title/card-title.component';
 import { CardSubTitleComponent } from './components/card/card-sub-title/card-sub-title.component';
 import { ChipsComponent } from './components/chips/chips.component';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
 
 const components = [
   ButtonComponent,
@@ -23,7 +24,8 @@ const components = [
   CardContentComponent,
   CardTitleComponent,
   CardSubTitleComponent,
-  ChipsComponent
+  ChipsComponent,
+  CheckboxComponent
 ]
 
 @NgModule({
