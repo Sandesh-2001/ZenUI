@@ -17,8 +17,13 @@ export class SidebarComponent {
       icon: "fa fa-circle"
     },
     {
-      path: "/dashboard/checkbox",
-      title: "Checkbox",
+      path: "/dashboard/file-upload",
+      title: "File Upload",
+      icon: "fa fa-file"
+    },
+    {
+      path: "/dashboard/card",
+      title: "Card",
       icon: "fa fa-circle"
     },
     {
@@ -27,8 +32,8 @@ export class SidebarComponent {
       icon: "fa fa-circle"
     },
     {
-      path: "/dashboard/input",
-      title: "Input",
+      path: "/dashboard/chips",
+      title: "Chips",
       icon: "fa fa-circle"
     },
     {
