@@ -1,0 +1,30 @@
+<label class="select" for="slct">
+  <select
+    id="slct"
+    [class]="classList"
+    [ngStyle]="{
+      width: width,
+      padding:
+        size === 'md' ? '12px' : size === 'lg' ? '16px' : '8px 40px 8px 12px'
+    }"
+    [style]="styles"
+    [(ngModel)]="value"
+    (change)="handleChange($event)"
+  >
+    <option value="" disabled>{{ placeholder }}</option>
+    @for (item of options; track $index) {
+    <option [value]="item.value">
+      {{ item.label }}
+    </option>
+    }
+  </select>
+
+  <svg>
+    <use xlink:href="#select-arrow-down"></use>
+  </svg>
+</label>
+<svg class="sprites">
+  <symbol id="select-arrow-down" viewbox="0 0 10 6">
+    <polyline points="1 1 5 5 9 1"></polyline>
+  </symbol>
+</svg>

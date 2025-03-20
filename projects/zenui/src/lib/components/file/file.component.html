@@ -1,0 +1,28 @@
+<div
+  class="dropzone"
+  [ngStyle]="{ height: height }"
+  [style]="customStyles"
+  (click)="triggerSelectFile()"
+  (dragover)="onDragOver($event)"
+  (dragleave)="onDragLeave($event)"
+  (drop)="onDrop($event)"
+  [class.drag-over]="isDragging"
+>
+  <label for="hidden-file-input">
+    <i class="fa-solid fa-cloud-arrow-up"></i>
+    <p>Drag & drop files here, or click to select</p>
+    @if(placeholder){
+    <p class="allowed-files">{{ placeholder }}</p>
+    }
+
+    <input
+      type="file"
+      id="hidden-file-input"
+      (change)="fileChange($event)"
+      #fileInput
+      class="hidden-file-input"
+      [multiple]="multiple"
+      [attr.accept]="allowedFileTypes"
+    />
+  </label>
+</div>
