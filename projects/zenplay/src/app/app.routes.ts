@@ -31,26 +31,11 @@ export const routes: Routes = [
       {
         path : "chips",
         component : ChipsComponent
-      }
-    ],
-  },
-    {
-        path: "",
-        redirectTo: "dashboard/button",
-        pathMatch: "full"
-    },
-    {
-        path: "dashboard",
-        component: DashboardComponent,
-        children: [
-            {
-                path: "button",
-                component  : ButtonComponent
-            },
-            {
-                path: "dialog",
-                component  : DialogComponent
-            }
-        ]
+      },
+      {
+        path: "dialog",
+        component  : DialogComponent
     }
+    ],
+  }
 ];

@@ -27,13 +27,13 @@ const components = [
   CardContentComponent,
   CardTitleComponent,
   CardSubTitleComponent,
-  ChipsComponent
+  ChipsComponent,
   SelectComponent,
   DialogComponent,
   FileComponent,
   DialogBodyComponent,
   DialogHeaderComponent,
-  DialogFooterComponent
+  DialogFooterComponent,
 ]
 
 @NgModule({
