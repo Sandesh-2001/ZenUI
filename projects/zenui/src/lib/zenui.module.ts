@@ -10,6 +10,7 @@ import { CardFooterComponent } from './components/card/card-footer/card-footer.c
 import { CardContentComponent } from './components/card/card-content/card-content.component';
 import { CardTitleComponent } from './components/card/card-title/card-title.component';
 import { CardSubTitleComponent } from './components/card/card-sub-title/card-sub-title.component';
+import { ChipsComponent } from './components/chips/chips.component';
 
 const components = [
   ButtonComponent,
@@ -21,7 +22,8 @@ const components = [
   CardFooterComponent,
   CardContentComponent,
   CardTitleComponent,
-  CardSubTitleComponent
+  CardSubTitleComponent,
+  ChipsComponent
 ]
 
 @NgModule({

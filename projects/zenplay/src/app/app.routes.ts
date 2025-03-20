@@ -3,6 +3,7 @@ import { DashboardComponent } from './pages/layout/dashboard/dashboard.component
 import { ButtonComponent } from './pages/ui-comp/components/button/button.component';
 import { FileUploadComponent } from './pages/ui-comp/components/file-upload/file-upload.component';
 import { CardComponent } from './pages/ui-comp/components/card/card.component';
+import { ChipsComponent } from "./pages/ui-comp/components/chips/chips.component";
 
 export const routes: Routes = [
   {
@@ -26,6 +27,10 @@ export const routes: Routes = [
         path: 'card',
         component: CardComponent,
       },
+      {
+        path : "chips",
+        component : ChipsComponent
+      }
     ],
   },
 ];

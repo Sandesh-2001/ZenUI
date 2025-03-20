@@ -27,8 +27,8 @@ export class SidebarComponent {
       icon: "fa fa-circle"
     },
     {
-      path: "/dashboard/input",
-      title: "Input",
+      path: "/dashboard/chips",
+      title: "Chips",
       icon: "fa fa-circle"
     },
     {

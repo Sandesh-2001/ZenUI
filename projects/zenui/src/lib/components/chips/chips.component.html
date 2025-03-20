@@ -1,0 +1,10 @@
+@if (label) {
+<span class="chip">
+  {{label}}
+  @if (removable) {
+  <a (click)="removeChip()" class="chip-remove">
+    <i class="fa-solid fa-xmark"></i>
+  </a>
+  }
+</span>
+}

@@ -1,0 +1,33 @@
+@import "../../styles//styles.scss";
+
+.chip {
+  background-color: #f4f4f5;
+  padding: 6px 12px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #18181b;
+
+  .chip-remove {
+    margin-left: 8px; // Space between text and remove button
+    background: none;
+    margin-top: 2px;
+    border: none;
+    color: #888;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: #535353; // Red hover effect
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
