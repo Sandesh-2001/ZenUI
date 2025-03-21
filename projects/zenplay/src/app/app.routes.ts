@@ -8,6 +8,9 @@ import { DialogComponent } from './pages/ui-comp/components/dialog/dialog.compon
 import { CheckboxComponent } from './pages/ui-comp/components/checkbox/checkbox.component';
 import { TextareaComponent } from './pages/ui-comp/components/textarea/textarea.component';
 import { ColorPickerComponent } from './pages/ui-comp/components/color-picker/color-picker.component';
+import { InputComponent } from './pages/ui-comp/components/input/input.component';
+import { PasswordComponent } from './pages/ui-comp/components/password/password.component';
+import { RadioComponent } from './pages/ui-comp/components/radio/radio.component';
 
 export const routes: Routes = [
   {
@@ -50,7 +53,22 @@ export const routes: Routes = [
       {
         path : "color-picker",
         component : ColorPickerComponent
-      }
+      },{
+        path: 'dialog',
+        component: DialogComponent,
+      },
+      {
+        path: 'input',
+        component: InputComponent,
+      },
+      {
+        path: 'password',
+        component: PasswordComponent,
+      },
+      {
+        path: 'radio',
+        component: RadioComponent,
+      },
     ],
   },
 ];

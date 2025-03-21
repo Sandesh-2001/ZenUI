@@ -40,12 +40,12 @@ export class SidebarComponent {
       icon: "fa fa-circle"
     },
     {
-      path: 'password',
+      path: '/dashboard/password',
       title: "Password",
       icon: ""
     },
     {
-      path: 'radio',
+      path: '/dashboard/radio',
       title: "Radio",
       icon: ""
     },

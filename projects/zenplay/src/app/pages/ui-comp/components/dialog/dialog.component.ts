@@ -8,11 +8,16 @@ import { ZenUiModule } from '../../../../../../../zenui/src/public-api';
   styleUrl: './dialog.component.scss'
 })
 export class DialogComponent {
-
-  confirm(){
-
+  openModal:boolean = false;
+  onOpenModal(){
+    this.openModal = true;
   }
-  close(){
-    
+
+  confirm(event:any){
+    console.log('confirm',event)
+    this.openModal = false;
+  }
+  close(event:any){
+    this.openModal = false
   }
 }

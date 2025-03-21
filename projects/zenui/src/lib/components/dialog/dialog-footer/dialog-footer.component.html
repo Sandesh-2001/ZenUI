@@ -1,3 +1,6 @@
-<div class="dialog-footer">
+<div class="zen-footer">
+        <zen-button [size]="'md'" [color]="''" (clickEvent)="onCancel($event)">Cancel</zen-button>    
+        <zen-button [size]="'md'"  (clickEvent)="onConfirm($event)">Confirm</zen-button>
     <ng-content></ng-content>
-</div>
+  </div>
+  

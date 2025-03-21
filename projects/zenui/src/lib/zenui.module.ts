@@ -18,6 +18,10 @@ import { DialogFooterComponent } from './components/dialog/dialog-footer/dialog-
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { TextareaComponent } from './components/textarea/textarea.component';
 import { ColorPickerComponent } from './components/color-picker/color-picker.component';
+import { RadioComponent } from './components/radio/radio.component';
+import { PasswordComponent } from './components/password/password.component';
+import { InputComponent } from './components/input/input.component';
+import { LabelComponent } from './components/label/label.component';
 
 const components = [
   ButtonComponent,
@@ -39,7 +43,11 @@ const components = [
   DialogFooterComponent,
   CheckboxComponent,
   TextareaComponent,
-  ColorPickerComponent
+  ColorPickerComponent,
+  RadioComponent,
+  PasswordComponent,
+  InputComponent,
+  LabelComponent
 ]
 
 @NgModule({
