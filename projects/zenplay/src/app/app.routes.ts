@@ -5,8 +5,9 @@ import { FileUploadComponent } from './pages/ui-comp/components/file-upload/file
 import { CardComponent } from './pages/ui-comp/components/card/card.component';
 import { ChipsComponent } from './pages/ui-comp/components/chips/chips.component';
 import { DialogComponent } from './pages/ui-comp/components/dialog/dialog.component';
-import { SelectComponent } from './pages/ui-comp/components/select/select.component';
-import { CheckboxComponent } from './pages/ui-comp/components/checkbox/checkbox.component';
+import { InputComponent } from './pages/ui-comp/components/input/input.component';
+import { PasswordComponent } from './pages/ui-comp/components/password/password.component';
+import { RadioComponent } from './pages/ui-comp/components/radio/radio.component';
 
 export const routes: Routes = [
   {
@@ -39,12 +40,16 @@ export const routes: Routes = [
         component: DialogComponent,
       },
       {
-        path: 'select',
-        component: SelectComponent,
+        path: 'input',
+        component: InputComponent,
       },
       {
-        path: 'checkbox',
-        component: CheckboxComponent,
+        path: 'password',
+        component: PasswordComponent,
+      },
+      {
+        path: 'radio',
+        component: RadioComponent,
       },
     ],
   },
