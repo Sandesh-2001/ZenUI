@@ -17,6 +17,7 @@ export class DialogComponent {
   open(){
 
   }
+  
   confirm(){
 
   }
