@@ -11,6 +11,7 @@ import { ColorPickerComponent } from './pages/ui-comp/components/color-picker/co
 import { InputComponent } from './pages/ui-comp/components/input/input.component';
 import { PasswordComponent } from './pages/ui-comp/components/password/password.component';
 import { RadioComponent } from './pages/ui-comp/components/radio/radio.component';
+import { DatePickerComponent } from './pages/ui-comp/components/date-picker/date-picker.component';
 
 export const routes: Routes = [
   {
@@ -69,6 +70,10 @@ export const routes: Routes = [
         path: 'radio',
         component: RadioComponent,
       },
+      {
+        path : "date-picker",
+        component : DatePickerComponent
+      }
     ],
   },
 ];

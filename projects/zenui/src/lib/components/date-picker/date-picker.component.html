@@ -1,0 +1,59 @@
+<div class="datepicker-container" #datepickerContainer>
+  <!-- Custom Input Wrapper -->
+  <div class="custom-datepicker-wrapper">
+    <div class="custom-datepicker-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+      </svg>
+    </div>
+    <input
+      type="text"
+      class="custom-datepicker-input"
+      [value]="selectedDate || ''"
+      (click)="toggleDatepicker()"
+      [placeholder]="placeholder"
+      readonly
+    />
+  </div>
+
+  <!-- Datepicker Popup -->
+  <div class="datepicker" *ngIf="showDatepicker" [ngClass]="position">
+    <!-- Header for Month Navigation -->
+    <div class="datepicker-header">
+      <button (click)="prevMonth()">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <span>{{ monthYear }}</span>
+      <button (click)="nextMonth()">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+
+    <!-- Calendar Table -->
+    <div class="datepicker-body">
+      <table class="calendar-table">
+        <thead>
+          <tr>
+            <th *ngFor="let day of ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']">
+              {{ day }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let week of weeks">
+            <td
+              [tabindex]="day ? 0 : -1"
+              (keydown)="selectDate(day, $event)"
+              *ngFor="let day of week"
+              [class.empty]="!day"
+              [class.today]="isToday(day)"
+              (click)="selectDate(day)"
+            >
+              {{ day || "" }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

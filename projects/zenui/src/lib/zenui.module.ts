@@ -22,6 +22,7 @@ import { RadioComponent } from './components/radio/radio.component';
 import { PasswordComponent } from './components/password/password.component';
 import { InputComponent } from './components/input/input.component';
 import { LabelComponent } from './components/label/label.component';
+import { DatePickerComponent } from './components/date-picker/date-picker.component';
 
 const components = [
   ButtonComponent,
@@ -47,7 +48,8 @@ const components = [
   RadioComponent,
   PasswordComponent,
   InputComponent,
-  LabelComponent
+  LabelComponent,
+  DatePickerComponent
 ]
 
 @NgModule({

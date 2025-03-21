@@ -63,6 +63,11 @@ export class SidebarComponent {
       path : "color-picker",
       title: "Color Picker",
       icon: "fa fa-circle"
+    },
+    {
+      path : "date-picker",
+      title: "Date Picker",
+      icon: "fa fa-circle"
     }
   ];
 }

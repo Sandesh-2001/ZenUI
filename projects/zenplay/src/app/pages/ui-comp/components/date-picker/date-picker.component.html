@@ -1,0 +1,14 @@
+<h1>Normal Use</h1>
+<zen-date-picker (dateChange)="onDateSelected($event)"></zen-date-picker>
+
+<h1>Template driven form</h1>
+<form #tForm="ngForm" (ngSubmit)="submit(tForm.value)">
+  <zen-date-picker [defaultDate]="date" name="dob" ngModel></zen-date-picker>
+  <zen-button style="margin-top: 8px;" [type]="'submit'">Submit</zen-button>
+</form>
+
+<h1>Reactive Form</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <zen-date-picker formControlName="date"></zen-date-picker>
+  <zen-button style="margin-top: 8px;" [type]="'submit'">Submit</zen-button>
+</form>
