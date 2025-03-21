@@ -5,9 +5,13 @@ import { FileUploadComponent } from './pages/ui-comp/components/file-upload/file
 import { CardComponent } from './pages/ui-comp/components/card/card.component';
 import { ChipsComponent } from './pages/ui-comp/components/chips/chips.component';
 import { DialogComponent } from './pages/ui-comp/components/dialog/dialog.component';
+import { CheckboxComponent } from './pages/ui-comp/components/checkbox/checkbox.component';
+import { TextareaComponent } from './pages/ui-comp/components/textarea/textarea.component';
+import { ColorPickerComponent } from './pages/ui-comp/components/color-picker/color-picker.component';
 import { InputComponent } from './pages/ui-comp/components/input/input.component';
 import { PasswordComponent } from './pages/ui-comp/components/password/password.component';
 import { RadioComponent } from './pages/ui-comp/components/radio/radio.component';
+import { DatePickerComponent } from './pages/ui-comp/components/date-picker/date-picker.component';
 
 export const routes: Routes = [
   {
@@ -36,6 +40,21 @@ export const routes: Routes = [
         component: ChipsComponent,
       },
       {
+        path: "dialog",
+        component  : DialogComponent
+      },
+      {
+        path : "checkbox",
+        component : CheckboxComponent
+      },
+      {
+        path : "textarea",
+        component : TextareaComponent
+      },
+      {
+        path : "color-picker",
+        component : ColorPickerComponent
+      },{
         path: 'dialog',
         component: DialogComponent,
       },
@@ -51,6 +70,10 @@ export const routes: Routes = [
         path: 'radio',
         component: RadioComponent,
       },
+      {
+        path : "date-picker",
+        component : DatePickerComponent
+      }
     ],
   },
 ];

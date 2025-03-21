@@ -3,25 +3,28 @@ import { ZenUiModule } from '../../../../../../../zenui/src/public-api';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-checkbox',
+  selector: 'app-date-picker',
   imports: [ZenUiModule, FormsModule, ReactiveFormsModule],
-  templateUrl: './checkbox.component.html',
-  styleUrl: './checkbox.component.scss'
+  templateUrl: './date-picker.component.html',
+  styleUrl: './date-picker.component.scss',
 })
-export class CheckboxComponent {
-
-  isChecked:boolean = false;
+export class DatePickerComponent {
+  
+  date = new Date('2022-04-01')
 
   form = new FormGroup({
-    acceptTerms: new FormControl('false'),
-  });
-
-  submitTemplateDrivenForm(values:any){
-    console.log(values);
+    date : new FormControl()
+  })
+  
+  onDateSelected(evt: any) {
+    console.log(evt);
   }
 
-  submit(){
+  submit(value:any){
+    console.log(value);
+  }
+
+  onSubmit(){
     console.log(this.form.value);
   }
-
 }

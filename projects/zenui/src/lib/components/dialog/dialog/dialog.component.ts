@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'zen-dialog',
@@ -8,17 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './dialog.component.scss'
 })
 export class DialogComponent {
-  isOpen :boolean = true;
-  title : string= "Dialog title";
+  
+  @Input() isOpen: boolean = false;
 
-   close(){
-
-  }
-  open(){
-
-  }
-  confirm(){
-
-  }
 
 }

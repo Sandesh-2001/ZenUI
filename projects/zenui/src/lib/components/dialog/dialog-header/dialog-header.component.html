@@ -1,3 +1,8 @@
-<div class="dialog-header">
-    <ng-content></ng-content>
+<div class="zen-header">
+    <!-- <h3>{{ title }}</h3> -->
+     <div class="content">
+         <ng-content ></ng-content>
+     </div>
+    <button class="close-btn" (click)="closeDialog()">&times;</button>
 </div>
+  

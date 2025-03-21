@@ -3,24 +3,26 @@ import { ZenUiModule } from '../../../../../../../zenui/src/public-api';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-checkbox',
+  selector: 'app-color-picker',
   imports: [ZenUiModule, FormsModule, ReactiveFormsModule],
-  templateUrl: './checkbox.component.html',
-  styleUrl: './checkbox.component.scss'
+  templateUrl: './color-picker.component.html',
+  styleUrl: './color-picker.component.scss'
 })
-export class CheckboxComponent {
-
-  isChecked:boolean = false;
+export class ColorPickerComponent {
 
   form = new FormGroup({
-    acceptTerms: new FormControl('false'),
+    color: new FormControl(''),
   });
 
-  submitTemplateDrivenForm(values:any){
-    console.log(values);
+  handleChange(evt:any){
+    console.log(evt);
   }
 
-  submit(){
+  submit(value:any){
+    console.log(value);
+  }
+
+  onSubmit(){
     console.log(this.form.value);
   }
 

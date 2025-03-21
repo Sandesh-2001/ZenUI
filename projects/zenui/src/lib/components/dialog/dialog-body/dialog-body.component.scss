@@ -1,3 +1,12 @@
-.dialog-body{
-    height: 120px;
-}
+// .dialog-body{
+//     height: 120px;
+// }
+
+@import "./../../../styles/variables";
+
+
+.zen-dialog-body {
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+  }

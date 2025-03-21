@@ -1,0 +1,30 @@
+@import "../../styles/styles.scss";
+
+.textarea-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.textarea-label textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 8px 12px;
+  border: 1px solid #e8eaed;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 1px 3px -2px #9098a9;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 150ms ease;
+}
+
+.textarea-label textarea:focus {
+  outline: none;
+  border-color: $primary-color;
+  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+}
+
+.textarea-label textarea::placeholder {
+  color: #5a667f;
+}

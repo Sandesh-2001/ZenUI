@@ -1,0 +1,36 @@
+<form
+  style="margin-bottom: 16px"
+  #myForm="ngForm"
+  (ngSubmit)="submit(myForm.value)"
+>
+  <h1>Template driven form</h1>
+  <zen-textarea
+    placeholder="Write something..."
+    [(ngModel)]="message"
+    name="message"
+  ></zen-textarea>
+  <zen-button style="margin-top: 8px" type="submit">Submit</zen-button>
+</form>
+
+<form
+  style="margin-bottom: 16px"
+  #testForm="ngForm"
+  (ngSubmit)="submit(testForm.value)"
+>
+  <h1>Template driven Without two way data binding form</h1>
+  <zen-textarea
+    placeholder="Write something..."
+    ngModel
+    name="test"
+  ></zen-textarea>
+  <zen-button style="margin-top: 8px" type="submit">Submit</zen-button>
+</form>
+
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+  <h1>Reactive form</h1>
+  <zen-textarea
+    placeholder="Enter details"
+    formControlName="description"
+  ></zen-textarea>
+  <zen-button style="margin-top: 8px" type="submit">Submit</zen-button>
+</form>

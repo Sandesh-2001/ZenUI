@@ -1,11 +1,9 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { Router, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
-  imports: [CommonModule,FormsModule, RouterModule],
+  imports: [RouterModule],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'
 })
@@ -56,5 +54,20 @@ export class SidebarComponent {
       title: "Checkbox",
       icon: "fa fa-circle"
     },
+    {
+      path : "textarea",
+      title : "Textarea",
+      icon: "fa fa-circle"
+    },
+    {
+      path : "color-picker",
+      title: "Color Picker",
+      icon: "fa fa-circle"
+    },
+    {
+      path : "date-picker",
+      title: "Date Picker",
+      icon: "fa fa-circle"
+    }
   ];
 }
