@@ -1,1 +1,13 @@
-<zen-color-picker></zen-color-picker>
+<form #tForm="ngForm" (ngSubmit)="submit(tForm.value)">
+    <h1>Template driven form</h1>
+    <zen-color-picker (colorChange)="handleChange($event)" ngModel name="color"></zen-color-picker>
+    <zen-button [type]="'submit'">Submit</zen-button>
+</form>
+
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <h1>Reactive form</h1>
+    <zen-color-picker formControlName="color"></zen-color-picker>
+    <zen-button [type]="'submit'">Submit</zen-button>
+</form>
+  

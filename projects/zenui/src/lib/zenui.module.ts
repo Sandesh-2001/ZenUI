@@ -17,6 +17,7 @@ import { DialogHeaderComponent } from './components/dialog/dialog-header/dialog-
 import { DialogFooterComponent } from './components/dialog/dialog-footer/dialog-footer.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { TextareaComponent } from './components/textarea/textarea.component';
+import { ColorPickerComponent } from './components/color-picker/color-picker.component';
 
 const components = [
   ButtonComponent,
@@ -38,7 +39,7 @@ const components = [
   DialogFooterComponent,
   CheckboxComponent,
   TextareaComponent,
-  // ColorPickerComponent
+  ColorPickerComponent
 ]
 
 @NgModule({

@@ -1,13 +1,13 @@
 import { Component, EventEmitter, forwardRef, Input, Output } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-// import { NgxColorsModule } from "ngx-colors";
+import { FormsModule, ReactiveFormsModule, NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
+import { NgxColorsModule } from 'ngx-colors';
 
 @Component({
   selector: 'zen-color-picker',
-  imports: [FormsModule],
+  standalone: true,
+  imports: [FormsModule, ReactiveFormsModule, NgxColorsModule],
   templateUrl: './color-picker.component.html',
-  styleUrl: './color-picker.component.scss',
+  styleUrls: ['./color-picker.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -17,26 +17,30 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
   ],
 })
 export class ColorPickerComponent implements ControlValueAccessor {
-  @Input() color: string = '#000000';
+  @Input() color: string = '#f06292';
+  @Output() colorChange = new EventEmitter<string>();
 
-  private onChange = (color: string) => {};
-  private onTouched = () => {};
+  private onChange: (color: string) => void = () => {};
+  private onTouched: () => void = () => {};
 
   writeValue(color: string): void {
-    this.color = color;
+    if (color) {
+      this.color = color;
+    }
   }
 
-  registerOnChange(fn: any): void {
+  registerOnChange(fn: (color: string) => void): void {
     this.onChange = fn;
   }
 
-  registerOnTouched(fn: any): void {
+  registerOnTouched(fn: () => void): void {
     this.onTouched = fn;
   }
 
-  handleColorChange(color: string) {
+  handleColorChange(color: string): void {
     this.color = color;
-    this.onChange(this.color);
+    this.colorChange.emit(this.color); // Emit event for external use
+    this.onChange(this.color); // Update form control
     this.onTouched();
   }
 }
