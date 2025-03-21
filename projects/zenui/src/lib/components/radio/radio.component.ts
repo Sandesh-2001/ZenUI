@@ -1,11 +1,10 @@
 import { Component, EventEmitter, forwardRef, Input, Output } from '@angular/core';
-import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
   selector: 'zen-radio',
-  imports: [ReactiveFormsModule, FormsModule],
   templateUrl: './radio.component.html',
-  styleUrl: './radio.component.scss',
+  styleUrls: ['./radio.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -17,33 +16,35 @@ import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModu
 export class RadioComponent implements ControlValueAccessor {
   @Input() name: string = '';
   @Input() value: string = '';
-  @Input () id: string = "";
+  @Input() id: string = '';
   @Input() label: string = '';
-  @Input() checked: boolean = false;
   @Input() disabled: boolean = false;
-
+  
   @Output() change = new EventEmitter<string>();
 
-  onRadioChange(event:any) {
-    // event?.stopPropagation();
-    if (!this.disabled && event) {
-      this.change.emit(this.value);
-    }
+  checked: boolean = false; // Track checked state
+
+  // ControlValueAccessor functions
+  public onChange: (value: string) => void = () => {};
+  public onTouched: () => void = () => {};
+
+  writeValue(value: string): void {
+    this.checked = value === this.value; // Set checked state
   }
 
-
-  public onChange = (value: boolean) => {};
-  public onTouched = () => {};
-  writeValue(value: boolean): void {
-    console.log('radio value', value);
-    this.checked = value;
+  registerOnChange(fn: (value: string) => void): void {
+    this.onChange = fn;
   }
 
-  registerOnChange(fn: any): void {
-    this.onChange = fn
-  }
-
-  registerOnTouched(fn: any): void {
+  registerOnTouched(fn: () => void): void {
     this.onTouched = fn;
+  }
+
+  onRadioChange(event: Event): void {
+    if (!this.disabled) {
+      this.checked = true;
+      this.onChange(this.value); // Notify Angular Forms
+      this.change.emit(this.value); // Emit custom event
+    }
   }
 }
