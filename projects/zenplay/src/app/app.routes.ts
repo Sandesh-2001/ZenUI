@@ -5,6 +5,9 @@ import { FileUploadComponent } from './pages/ui-comp/components/file-upload/file
 import { CardComponent } from './pages/ui-comp/components/card/card.component';
 import { ChipsComponent } from './pages/ui-comp/components/chips/chips.component';
 import { DialogComponent } from './pages/ui-comp/components/dialog/dialog.component';
+import { InputComponent } from './pages/ui-comp/components/input/input.component';
+import { PasswordComponent } from './pages/ui-comp/components/password/password.component';
+import { RadioComponent } from './pages/ui-comp/components/radio/radio.component';
 
 export const routes: Routes = [
   {
@@ -33,9 +36,21 @@ export const routes: Routes = [
         component: ChipsComponent,
       },
       {
-        path: "dialog",
-        component  : DialogComponent
-    }
+        path: 'dialog',
+        component: DialogComponent,
+      },
+      {
+        path: 'input',
+        component: InputComponent,
+      },
+      {
+        path: 'password',
+        component: PasswordComponent,
+      },
+      {
+        path: 'radio',
+        component: RadioComponent,
+      },
     ],
   },
 ];
