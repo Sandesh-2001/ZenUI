@@ -1,1 +1,12 @@
-<p>radio works!</p>
+    <input 
+      type="radio" 
+      [value]="value" 
+      [name]="name"
+      [checked]="checked" 
+      [disabled]="disabled"
+      [id]="id"
+      (change)="onRadioChange($event)"
+    >
+    <span class="radio-indicator"></span>
+    {{ label }}
+  

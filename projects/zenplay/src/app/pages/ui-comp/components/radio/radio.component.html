@@ -1,1 +1,36 @@
-<zen-radio></zen-radio>
+
+<div class="container">
+
+    <form [formGroup]="radioForm" (ngSubmit)="onFormSubmit()">
+        <fieldset>
+            <legend>Reactive Forms</legend>
+            @for (item of valueArr; track $index) {
+                <!-- <input type="radio" formControlName="gender" [value]="item" /> -->
+                <zen-radio [id]="'default_id'+item" formControlName="gender" name="default" [value]="item"/>
+                <zen-label [for]="'default_id'+item">
+                    {{item}}
+                </zen-label>
+            }
+            <p>Selected value : {{radioForm.value.gender}}</p>
+            <zen-button [type]="'submit'" >Submit</zen-button>
+
+        </fieldset>
+    </form>
+
+    <form #radioTemplate="ngForm" (ngSubmit)="templateSubmit(radioTemplate.value)" >
+        <fieldset>
+            <legend>Template Driven Form</legend>
+            @for (item of valueArr; track $index) {
+                <zen-radio [id]="'template_'+item" [value]="item" ngModel [name]="'gender'">
+                    
+                </zen-radio>
+                <zen-label [for]="'template_'+item"   >
+                    {{item}}
+                </zen-label>
+            }
+            <p>Selected value : {{radioTemplate.value.gender | json}}</p>
+            <zen-button [type]="'submit'">Submit</zen-button>
+        </fieldset>
+    </form>
+</div>
+
