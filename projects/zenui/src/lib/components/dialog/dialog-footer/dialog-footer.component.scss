@@ -1,7 +1,43 @@
-.dialog-footer{
+// .dialog-footer{
+//     display: flex;
+//     justify-content: end;
+//     gap:4px;
+//     margin:10px;
+//      // background-color: blue;
+//  }
+
+@import "./../../../styles/variables";
+.zen-footer {
     display: flex;
-    justify-content: end;
-    gap:4px;
-    margin:10px;
-     // background-color: blue;
- }
+    justify-content: flex-end;
+    padding: 16px;
+    border-top: 1px solid #ddd;
+    gap: 8px;
+    .btn {
+      padding: 8px 14px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      transition: 0.2s ease-in-out;
+    }
+  
+    .cancel {
+      background: #ccc;
+      margin-right: 8px;
+  
+      &:hover {
+        background: darken(#ccc, 10%);
+      }
+    }
+  
+    .confirm {
+      background: #007bff;
+      color: white;
+  
+      &:hover {
+        background: darken(#007bff, 10%);
+      }
+    }
+  }
+  
