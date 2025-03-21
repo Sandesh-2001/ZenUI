@@ -1,0 +1,50 @@
+.zen-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  
+    input {
+      display: none;
+    }
+  
+    .radio-indicator {
+      width: 16px;
+      height: 16px;
+      border: 2px solid #333;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease-in-out;
+    }
+  
+    input:checked + .radio-indicator {
+      background-color: #007bff;
+      border-color: #007bff;
+      box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+    }
+  
+    input:checked + .radio-indicator::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: white;
+      border-radius: 50%;
+    }
+  
+    input:disabled + .radio-indicator {
+      border-color: #ccc;
+      background-color: #f0f0f0;
+      cursor: not-allowed;
+    }
+  
+    input:disabled ~ span {
+      color: #999;
+      cursor: not-allowed;
+    }
+  }
+  
