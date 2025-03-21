@@ -5,6 +5,9 @@ import { FileUploadComponent } from './pages/ui-comp/components/file-upload/file
 import { CardComponent } from './pages/ui-comp/components/card/card.component';
 import { ChipsComponent } from './pages/ui-comp/components/chips/chips.component';
 import { DialogComponent } from './pages/ui-comp/components/dialog/dialog.component';
+import { CheckboxComponent } from './pages/ui-comp/components/checkbox/checkbox.component';
+import { TextareaComponent } from './pages/ui-comp/components/textarea/textarea.component';
+import { ColorPickerComponent } from './pages/ui-comp/components/color-picker/color-picker.component';
 
 export const routes: Routes = [
   {
@@ -35,7 +38,19 @@ export const routes: Routes = [
       {
         path: "dialog",
         component  : DialogComponent
-    }
+      },
+      {
+        path : "checkbox",
+        component : CheckboxComponent
+      },
+      {
+        path : "textarea",
+        component : TextareaComponent
+      },
+      {
+        path : "color-picker",
+        component : ColorPickerComponent
+      }
     ],
   },
 ];

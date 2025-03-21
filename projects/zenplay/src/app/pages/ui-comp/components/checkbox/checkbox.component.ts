@@ -12,10 +12,8 @@ export class CheckboxComponent {
 
   isChecked:boolean = false;
 
-  skills = ["Angular", "React", "Java"]
-
   form = new FormGroup({
-    acceptTerms: new FormControl(false),
+    acceptTerms: new FormControl('false'),
   });
 
   submitTemplateDrivenForm(values:any){

@@ -1,0 +1,15 @@
+<label class="textarea-label">
+    <textarea
+      [class]="classList"
+      [ngStyle]="{
+        width: width,
+        padding: size === 'md' ? '12px' : size === 'lg' ? '16px' : '8px 12px'
+      }"
+      [style]="styles"
+      [(ngModel)]="value"
+      [rows]="rows"
+      (input)="handleInput($event)"
+      [placeholder]="placeholder"
+    ></textarea>
+  </label>
+  

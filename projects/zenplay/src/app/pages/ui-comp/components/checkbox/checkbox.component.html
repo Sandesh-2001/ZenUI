@@ -9,15 +9,13 @@
 
 <h1>Reactive Form</h1>
 <form [formGroup]="form" (ngSubmit)="submit()">
-  @for (item of skills; track $index) {
   <div>
     <zen-checkbox
-      [id]="item"
+      [id]="'tc'"
       formControlName="acceptTerms"
     ></zen-checkbox>
-    <label for="{{item}}">{{item}}</label>
+    <label for="tc">Accept Terms</label>
   </div>
-  }
   <div>
     <zen-button [type]="'submit'">Submit</zen-button>
   </div>

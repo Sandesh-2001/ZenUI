@@ -3,9 +3,8 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
   selector: 'zen-checkbox',
-  imports: [],
   templateUrl: './checkbox.component.html',
-  styleUrl: './checkbox.component.scss',
+  styleUrls: ['./checkbox.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -14,17 +13,18 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
     },
   ],
 })
-export class CheckboxComponent implements ControlValueAccessor{
-  @Input() id: string = 'option';
-  @Input() checked: boolean = false;
+export class CheckboxComponent implements ControlValueAccessor {
+  @Input() id: string = 'option'; // Unique ID for checkbox
+  @Input() value: any = true; // Value emitted when checked
+  @Input() checked: boolean = false; // Is the checkbox checked?
 
-  @Output() onCheckedChange: EventEmitter<boolean> = new EventEmitter();
+  @Output() onCheckedChange: EventEmitter<any> = new EventEmitter();
 
-  private onChange = (value: boolean) => {};
-  private onTouched = () => {};
+  private onChange: (value: any) => void = () => {};
+  private onTouched: () => void = () => {};
 
-  writeValue(value: boolean): void {
-    this.checked = value;
+  writeValue(value: any): void {
+    this.checked = value === this.value; // Check if value matches
   }
 
   registerOnChange(fn: any): void {
@@ -37,8 +37,10 @@ export class CheckboxComponent implements ControlValueAccessor{
 
   onCheckValueChanged(evt: any) {
     this.checked = evt.target.checked;
-    this.onCheckedChange.emit(this.checked);
-    this.onChange(this.checked);
+    const emittedValue = this.checked ? this.value : null;
+
+    this.onCheckedChange.emit(emittedValue);
+    this.onChange(emittedValue);
     this.onTouched();
   }
 }
