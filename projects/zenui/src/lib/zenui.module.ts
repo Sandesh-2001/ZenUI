@@ -25,6 +25,16 @@ import { LabelComponent } from './components/label/label.component';
 import { DatePickerComponent } from './components/date-picker/date-picker.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { BadgeComponent } from './components/badge/badge.component';
+import { MenubarContentComponent } from './components/menubar/menubar-content/menubar-content.component';
+import { MenubarItemComponent } from './components/menubar/menubar-item/menubar-item.component';
+import { MenubarMenuComponent } from './components/menubar/menubar-menu/menubar-menu.component';
+import { MenubarSeperatorComponent } from './components/menubar/menubar-seperator/menubar-seperator.component';
+import { MenubarShortcutComponent } from './components/menubar/menubar-shortcut/menubar-shortcut.component';
+import { MenubarSubComponent } from './components/menubar/menubar-sub/menubar-sub.component';
+import { MenubarSubContentComponent } from './components/menubar/menubar-sub-content/menubar-sub-content.component';
+import { MenubarTriggerComponent } from './components/menubar/menubar-trigger/menubar-trigger.component';
+import { MenubarSubTriggerComponent } from './components/menubar/menubar-sub-trigger/menubar-sub-trigger.component';
+import { MenubarComponent } from './components/menubar/menubar/menubar.component';
 
 const components = [
   ButtonComponent,
@@ -53,7 +63,17 @@ const components = [
   LabelComponent,
   DatePickerComponent,
   AccordionComponent,
-  BadgeComponent
+  BadgeComponent,
+  MenubarContentComponent,
+  MenubarItemComponent,
+  MenubarMenuComponent,
+  MenubarSeperatorComponent,
+  MenubarShortcutComponent,
+  MenubarSubComponent,
+  MenubarSubContentComponent,
+  MenubarTriggerComponent,
+  MenubarSubTriggerComponent,
+  MenubarComponent
 ]
 
 @NgModule({

@@ -78,6 +78,11 @@ export class SidebarComponent {
       path : "badge",
       title : "Badge",
       icon: "fa fa-circle"
+    },
+    {
+      path : "menubar",
+      title: "Menubar",
+      icon: "fa fa-circle"
     }
   ];
 }

@@ -14,6 +14,7 @@ import { RadioComponent } from './pages/ui-comp/components/radio/radio.component
 import { DatePickerComponent } from './pages/ui-comp/components/date-picker/date-picker.component';
 import { AccordionComponent } from './pages/ui-comp/components/accordion/accordion.component';
 import { BadgeComponent } from './pages/ui-comp/components/badge/badge.component';
+import { MenubarComponent } from './pages/ui-comp/components/menubar/menubar.component';
 
 export const routes: Routes = [
   {
@@ -42,21 +43,22 @@ export const routes: Routes = [
         component: ChipsComponent,
       },
       {
-        path: "dialog",
-        component  : DialogComponent
+        path: 'dialog',
+        component: DialogComponent,
       },
       {
-        path : "checkbox",
-        component : CheckboxComponent
+        path: 'checkbox',
+        component: CheckboxComponent,
       },
       {
-        path : "textarea",
-        component : TextareaComponent
+        path: 'textarea',
+        component: TextareaComponent,
       },
       {
-        path : "color-picker",
-        component : ColorPickerComponent
-      },{
+        path: 'color-picker',
+        component: ColorPickerComponent,
+      },
+      {
         path: 'dialog',
         component: DialogComponent,
       },
@@ -73,17 +75,21 @@ export const routes: Routes = [
         component: RadioComponent,
       },
       {
-        path : "date-picker",
-        component : DatePickerComponent
+        path: 'date-picker',
+        component: DatePickerComponent,
       },
       {
-        path : "accordion",
-        component : AccordionComponent
+        path: 'accordion',
+        component: AccordionComponent,
       },
       {
-        path : "badge",
-        component: BadgeComponent
-      }
+        path: 'badge',
+        component: BadgeComponent,
+      },
+      {
+        path: 'menubar',
+        component: MenubarComponent,
+      },
     ],
   },
 ];

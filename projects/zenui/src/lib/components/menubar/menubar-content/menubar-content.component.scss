@@ -1,0 +1,15 @@
+.menu-content{
+    display: none;
+}
+
+:host-context(.menu:hover) .menu-content{
+    display: block;
+    position: absolute;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    min-width: 150px;
+    margin-top: -4px;
+    line-height: 24px;
+    margin-left: 4px;
+}
+

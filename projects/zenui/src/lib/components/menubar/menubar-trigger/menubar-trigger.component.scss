@@ -1,0 +1,14 @@
+.menu-trigger{
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-trigger:hover{
+    background-color: rgb(224, 223, 223);
+}
+
+:host-context(.menu:hover) .menu-trigger{
+    background-color: rgb(224, 223, 223);
+}
