@@ -23,6 +23,8 @@ import { PasswordComponent } from './components/password/password.component';
 import { InputComponent } from './components/input/input.component';
 import { LabelComponent } from './components/label/label.component';
 import { DatePickerComponent } from './components/date-picker/date-picker.component';
+import { AccordionComponent } from './components/accordion/accordion.component';
+import { BadgeComponent } from './components/badge/badge.component';
 
 const components = [
   ButtonComponent,
@@ -49,7 +51,9 @@ const components = [
   PasswordComponent,
   InputComponent,
   LabelComponent,
-  DatePickerComponent
+  DatePickerComponent,
+  AccordionComponent,
+  BadgeComponent
 ]
 
 @NgModule({

@@ -47,7 +47,7 @@ export class SidebarComponent {
     {
       path: '/dashboard/radio',
       title: "Radio",
-      icon: ""
+      icon: "fa fa-circle"
     },
     {
       path: "/dashboard/checkbox",
@@ -67,6 +67,16 @@ export class SidebarComponent {
     {
       path : "date-picker",
       title: "Date Picker",
+      icon: "fa fa-circle"
+    },
+    {
+      path : "accordion",
+      title : "Accordion",
+      icon: "fa fa-circle"
+    },
+    {
+      path : "badge",
+      title : "Badge",
       icon: "fa fa-circle"
     }
   ];

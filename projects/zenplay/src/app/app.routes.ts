@@ -12,6 +12,8 @@ import { InputComponent } from './pages/ui-comp/components/input/input.component
 import { PasswordComponent } from './pages/ui-comp/components/password/password.component';
 import { RadioComponent } from './pages/ui-comp/components/radio/radio.component';
 import { DatePickerComponent } from './pages/ui-comp/components/date-picker/date-picker.component';
+import { AccordionComponent } from './pages/ui-comp/components/accordion/accordion.component';
+import { BadgeComponent } from './pages/ui-comp/components/badge/badge.component';
 
 export const routes: Routes = [
   {
@@ -73,6 +75,14 @@ export const routes: Routes = [
       {
         path : "date-picker",
         component : DatePickerComponent
+      },
+      {
+        path : "accordion",
+        component : AccordionComponent
+      },
+      {
+        path : "badge",
+        component: BadgeComponent
       }
     ],
   },

@@ -1,0 +1,63 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.default {
+  background-color: black;
+  color: white;
+  border: 1px solid #d6d6d6;
+}
+
+.default:hover {
+  background-color: rgb(90, 90, 90);
+}
+
+.secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: #5a6268;
+}
+
+.primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #0056b3;
+}
+
+.destructive {
+  background-color: #dc3545;
+  color: white;
+}
+
+.destructive:hover {
+  background-color: #c82333;
+}
+
+.outline {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.outline:hover {
+  background-color: #f8f9fa;
+}
+
+.default {
+  border-radius: 6px;
+}
+
+.pill {
+  border-radius: 999px;
+}
