@@ -1,5 +1,5 @@
 <h1>Normal Use</h1>
-<zen-switch (checkedChange)="onChange($event)"></zen-switch>
+<zen-switch [(ngModel)]="isToggled"></zen-switch>
 <p>Switch is {{ isToggled ? "ON" : "OFF" }}</p>
 
 

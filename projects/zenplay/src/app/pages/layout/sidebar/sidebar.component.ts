@@ -93,6 +93,11 @@ export class SidebarComponent {
       path : "switch",
       title : "Switch",
       icon : "fa fa-circle"
+    },
+    {
+      path : "progress",
+      title : "Progress",
+      icon: "fa fa-circle"
     }
   ];
 }
