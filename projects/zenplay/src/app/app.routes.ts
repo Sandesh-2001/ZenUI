@@ -16,6 +16,8 @@ import { AccordionComponent } from './pages/ui-comp/components/accordion/accordi
 import { BadgeComponent } from './pages/ui-comp/components/badge/badge.component';
 import { MenubarComponent } from './pages/ui-comp/components/menubar/menubar.component';
 import { AlertDialogComponent } from './pages/ui-comp/components/alert-dialog/alert-dialog.component';
+import { SwitchComponent } from './pages/ui-comp/components/switch/switch.component';
+import { ProgressComponent } from './pages/ui-comp/components/progress/progress.component';
 
 export const routes: Routes = [
   {
@@ -94,6 +96,14 @@ export const routes: Routes = [
       {
         path : "alert-dialog",
         component : AlertDialogComponent
+      },
+      {
+        path : "switch",
+        component : SwitchComponent
+      },
+      {
+        path : "progress",
+        component : ProgressComponent
       }
     ],
   },
