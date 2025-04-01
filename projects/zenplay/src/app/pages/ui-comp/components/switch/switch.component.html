@@ -1,0 +1,17 @@
+<h1>Normal Use</h1>
+<zen-switch (checkedChange)="onChange($event)"></zen-switch>
+<p>Switch is {{ isToggled ? "ON" : "OFF" }}</p>
+
+
+<h1>Template driven for</h1>
+<form #form="ngForm">
+  <zen-switch name="mySwitch" ngModel name="notifications"></zen-switch>
+</form>
+<p>Form Value: {{ form.value.notifications }}</p>
+
+<h1>Reactive Form</h1>
+<form [formGroup]="reactiveForm">
+    <zen-switch formControlName="mySwitch"></zen-switch>
+  </form>
+<p>Form Value: {{ reactiveForm.value.mySwitch }}</p>
+  

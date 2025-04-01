@@ -44,6 +44,7 @@ import { AlertDialogFooterComponent } from './components/alert-dialog/alert-dial
 import { AlertDialogHeaderComponent } from './components/alert-dialog/alert-dialog-header/alert-dialog-header.component';
 import { AlertDialogTriggerComponent } from './components/alert-dialog/alert-dialog-trigger/alert-dialog-trigger.component';
 import { AlertDialogTitleComponent } from './components/alert-dialog/alert-dialog-title/alert-dialog-title.component';
+import { SwitchComponent } from './components/switch/switch.component';
 
 const components = [
   ButtonComponent,
@@ -92,6 +93,7 @@ const components = [
   AlertDialogHeaderComponent,
   AlertDialogTriggerComponent,
   AlertDialogTitleComponent,
+  SwitchComponent
 ]
 
 @NgModule({
