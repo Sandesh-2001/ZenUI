@@ -83,6 +83,11 @@ export class SidebarComponent {
       path : "menubar",
       title: "Menubar",
       icon: "fa fa-circle"
+    },
+    {
+      path : "alert-dialog",
+      title : "Alert Dialog",
+      icon: "fa fa-circle"
     }
   ];
 }

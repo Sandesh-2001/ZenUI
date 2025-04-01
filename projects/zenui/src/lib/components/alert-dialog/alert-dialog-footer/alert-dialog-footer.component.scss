@@ -1,0 +1,29 @@
+.zen-alert-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .zen-alert-cancel {
+    background: #e0e0e0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .zen-alert-cancel:hover {
+    background: #d6d6d6;
+  }
+  
+  .zen-alert-confirm {
+    background: #ef4444;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .zen-alert-confirm:hover {
+    background: #dc2626;
+  }
+  

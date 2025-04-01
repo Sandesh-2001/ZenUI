@@ -1,0 +1,6 @@
+<div>
+  <ng-content select="[openBtn]"></ng-content>
+  <div id="zen-alert-dialog-content" [class.open]="isOpen" [class.close]="!isOpen">
+    <ng-content select="[dialogContent]"></ng-content>
+  </div>
+</div>

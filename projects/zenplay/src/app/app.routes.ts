@@ -15,6 +15,7 @@ import { DatePickerComponent } from './pages/ui-comp/components/date-picker/date
 import { AccordionComponent } from './pages/ui-comp/components/accordion/accordion.component';
 import { BadgeComponent } from './pages/ui-comp/components/badge/badge.component';
 import { MenubarComponent } from './pages/ui-comp/components/menubar/menubar.component';
+import { AlertDialogComponent } from './pages/ui-comp/components/alert-dialog/alert-dialog.component';
 
 export const routes: Routes = [
   {
@@ -90,6 +91,10 @@ export const routes: Routes = [
         path: 'menubar',
         component: MenubarComponent,
       },
+      {
+        path : "alert-dialog",
+        component : AlertDialogComponent
+      }
     ],
   },
 ];

@@ -1,0 +1,20 @@
+<zen-alert-dialog (isConfirm)="actionChange($event)">
+    <zen-alert-dialog-trigger openBtn>
+        <zen-button>Open</zen-button>
+    </zen-alert-dialog-trigger>
+    <zen-alert-dialog-content dialogContent>
+      <zen-alert-dialog-header>
+        <zen-alert-dialog-title>Are you absolutely sure?</zen-alert-dialog-title>
+        <zen-alert-dialog-description>
+          This action cannot be undone. This will permanently delete your account
+          and remove your data from our servers.
+        </zen-alert-dialog-description>
+      </zen-alert-dialog-header>
+      <zen-alert-dialog-footer>
+        <zen-alert-dialog-cancel>Cancel</zen-alert-dialog-cancel>
+        <zen-alert-dialog-action>Continue</zen-alert-dialog-action>
+      </zen-alert-dialog-footer>
+    </zen-alert-dialog-content>
+</zen-alert-dialog>
+
+<h1> Confirm response : {{ isConfirm }} </h1>
