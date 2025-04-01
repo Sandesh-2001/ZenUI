@@ -23,7 +23,8 @@ import { PasswordComponent } from './components/password/password.component';
 import { InputComponent } from './components/input/input.component';
 import { LabelComponent } from './components/label/label.component';
 import { DatePickerComponent } from './components/date-picker/date-picker.component';
-import { AccordionComponent } from './components/accordion/accordion.component';
+import { AccordionComponent } from './components/accordion/accordion/accordion.component';
+import { AccordionItemComponent } from './components/accordion/accordion-item/accordion-item.component';
 import { BadgeComponent } from './components/badge/badge.component';
 import { MenubarContentComponent } from './components/menubar/menubar-content/menubar-content.component';
 import { MenubarItemComponent } from './components/menubar/menubar-item/menubar-item.component';
@@ -72,6 +73,7 @@ const components = [
   LabelComponent,
   DatePickerComponent,
   AccordionComponent,
+  AccordionItemComponent,
   BadgeComponent,
   MenubarContentComponent,
   MenubarItemComponent,

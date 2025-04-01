@@ -1,1 +1,24 @@
-<zen-accordion ></zen-accordion>
+<div>
+    Single Open at a time
+    <zen-accordion [multiple]="false">
+        @for (item of data; track $index;let idx = $index;) {
+            <zen-accordion-item [title]="item.header" [index]="idx">
+              <p>{{item.data}}</p>
+            </zen-accordion-item>
+        }
+      </zen-accordion>
+</div>
+
+<hr>
+<div>
+    Multiple Open at a time
+    <zen-accordion [multiple]="true">
+        @for (item of data; track $index;let idx = $index;) {
+            <zen-accordion-item [title]="item.header" [index]="idx">
+              <p>{{item.data}}</p>
+            </zen-accordion-item>
+        }
+      </zen-accordion>
+</div>
+
+  
