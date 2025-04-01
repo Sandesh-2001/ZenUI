@@ -46,6 +46,10 @@ import { AlertDialogTriggerComponent } from './components/alert-dialog/alert-dia
 import { AlertDialogTitleComponent } from './components/alert-dialog/alert-dialog-title/alert-dialog-title.component';
 import { SwitchComponent } from './components/switch/switch.component';
 import { ProgressComponent } from './components/progress/progress.component';
+import { TabsComponent } from './components/tabs/tabs/tabs.component';
+import { TabsContentComponent } from './components/tabs/tabs-content/tabs-content.component';
+import { TabsTriggerComponent } from './components/tabs/tabs-trigger/tabs-trigger.component';
+import { TabsListComponent } from './components/tabs/tabs-list/tabs-list.component';
 
 const components = [
   ButtonComponent,
@@ -95,7 +99,11 @@ const components = [
   AlertDialogTriggerComponent,
   AlertDialogTitleComponent,
   SwitchComponent,
-  ProgressComponent
+  ProgressComponent,
+  TabsComponent,
+  TabsContentComponent,
+  TabsTriggerComponent,
+  TabsListComponent
 ]
 
 @NgModule({

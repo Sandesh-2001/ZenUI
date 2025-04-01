@@ -18,6 +18,7 @@ import { MenubarComponent } from './pages/ui-comp/components/menubar/menubar.com
 import { AlertDialogComponent } from './pages/ui-comp/components/alert-dialog/alert-dialog.component';
 import { SwitchComponent } from './pages/ui-comp/components/switch/switch.component';
 import { ProgressComponent } from './pages/ui-comp/components/progress/progress.component';
+import { TabsComponent } from './pages/ui-comp/components/tabs/tabs.component';
 
 export const routes: Routes = [
   {
@@ -104,6 +105,10 @@ export const routes: Routes = [
       {
         path : "progress",
         component : ProgressComponent
+      },
+      {
+        path : "tabs",
+        component : TabsComponent
       }
     ],
   },
