@@ -52,6 +52,7 @@ import { TabsTriggerComponent } from './components/tabs/tabs-trigger/tabs-trigge
 import { TabsListComponent } from './components/tabs/tabs-list/tabs-list.component';
 import { TooltipComponent } from './components/tooltip/tooltip/tooltip.component';
 import { TooltipDirective } from './components/tooltip/tooltip.directive';
+import { TableComponent } from './components/table/table.component';
 
 const components = [
   ButtonComponent,
@@ -107,7 +108,8 @@ const components = [
   TabsTriggerComponent,
   TabsListComponent,
   TooltipComponent,
-  TooltipDirective
+  TooltipDirective,
+  TableComponent
 ]
 
 @NgModule({

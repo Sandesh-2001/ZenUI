@@ -1,0 +1,32 @@
+<ngx-datatable
+  class="material"
+  [rows]="tempRows"
+  [columnMode]="'force'"
+  [headerHeight]="48"
+  [footerHeight]="50"
+  rowHeight="auto"
+  [selected]="selectedRows"
+  [selectionType]="SelectionType.checkbox"
+  [selectAllRowsOnPage]="true"
+  (select)="onSelect($event)"
+  [externalPaging]="true"
+  [count]="page.totalElements"
+  [offset]="page.pageNumber"
+  [limit]="page.size"
+  (page)="setPage($event)"
+  [ghostLoadingIndicator]="isLoading"
+>
+  <ngx-datatable-column
+    [width]="30"
+    [sortable]="false"
+    [canAutoResize]="false"
+    [draggable]="false"
+    [resizeable]="false"
+    [headerCheckboxable]="true"
+    [checkboxable]="true"
+  >
+  </ngx-datatable-column>
+  @for (item of columns; track $index) {
+      <ngx-datatable-column [name]="item.prop"></ngx-datatable-column>
+  }
+</ngx-datatable>

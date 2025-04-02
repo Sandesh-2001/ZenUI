@@ -20,6 +20,7 @@ import { SwitchComponent } from './pages/ui-comp/components/switch/switch.compon
 import { ProgressComponent } from './pages/ui-comp/components/progress/progress.component';
 import { TabsComponent } from './pages/ui-comp/components/tabs/tabs.component';
 import { TooltipComponent } from './pages/ui-comp/components/tooltip/tooltip.component';
+import { TableComponent } from './pages/ui-comp/components/table/table.component';
 
 export const routes: Routes = [
   {
@@ -114,6 +115,10 @@ export const routes: Routes = [
       {
         path : "tooltip",
         component : TooltipComponent
+      },
+      {
+        path : "table",
+        component : TableComponent
       }
     ],
   },

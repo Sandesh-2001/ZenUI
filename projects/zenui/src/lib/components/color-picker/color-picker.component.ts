@@ -17,11 +17,18 @@ import { NgxColorsModule } from 'ngx-colors';
   ],
 })
 export class ColorPickerComponent implements ControlValueAccessor {
-  @Input() color: string = '#f06292';
+  @Input() color: string = '';
   @Output() colorChange = new EventEmitter<string>();
 
   private onChange: (color: string) => void = () => {};
   private onTouched: () => void = () => {};
+
+  ngOnInit(){
+    setTimeout(()=>{
+      this.onChange(this.color || "#f06292");
+      this.color ? '' : this.color =   "#f06292"
+    },0)
+  }
 
   writeValue(color: string): void {
     if (color) {

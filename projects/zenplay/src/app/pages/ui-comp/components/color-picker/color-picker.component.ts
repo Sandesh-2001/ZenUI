@@ -11,7 +11,7 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angul
 export class ColorPickerComponent {
 
   form = new FormGroup({
-    color: new FormControl(''),
+    color: new FormControl('#ffb300'),
   });
 
   handleChange(evt:any){
