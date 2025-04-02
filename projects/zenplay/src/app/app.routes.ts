@@ -19,6 +19,7 @@ import { AlertDialogComponent } from './pages/ui-comp/components/alert-dialog/al
 import { SwitchComponent } from './pages/ui-comp/components/switch/switch.component';
 import { ProgressComponent } from './pages/ui-comp/components/progress/progress.component';
 import { TabsComponent } from './pages/ui-comp/components/tabs/tabs.component';
+import { TooltipComponent } from './pages/ui-comp/components/tooltip/tooltip.component';
 
 export const routes: Routes = [
   {
@@ -109,6 +110,10 @@ export const routes: Routes = [
       {
         path : "tabs",
         component : TabsComponent
+      },
+      {
+        path : "tooltip",
+        component : TooltipComponent
       }
     ],
   },

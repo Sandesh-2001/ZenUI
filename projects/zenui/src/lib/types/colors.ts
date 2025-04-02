@@ -29,7 +29,7 @@ const themes = {
       border: 'hsl(20 5.9% 90%)',
       input: 'hsl(20 5.9% 90%)',
       ring: 'hsl(24.6 95% 53.1%)',
-      radius: 'hsl(0.5rem)',
+      radius: '0.5rem',
     },
     dark: {
       background: 'hsl(20 14.3% 4.1%)',
@@ -74,7 +74,7 @@ const themes = {
       border: 'hsl(214.3 31.8% 91.4%)',
       input: 'hsl(214.3 31.8% 91.4%)',
       ring: 'hsl(221.2 83.2% 53.3%)',
-      radius: 'hsl(1rem)',
+      radius: '0.5rem',
     },
     dark: {
       background: 'hsl(222.2 84% 4.9%)',
@@ -119,7 +119,7 @@ const themes = {
       border: 'hsl(240 5.9% 90%)',
       input: 'hsl(240 5.9% 90%)',
       ring: 'hsl(142.1 76.2% 36.3%)',
-      radius: 'hsl(0.5rem)',
+      radius: '0.5rem',
     },
     dark: {
       background: 'hsl(20 14.3% 4.1%)',
@@ -164,7 +164,7 @@ const themes = {
       border: 'hsl(240 5.9% 90%)',
       input: 'hsl(240 5.9% 90%)',
       ring: 'hsl(346.8 77.2% 49.8%)',
-      radius: 'hsl(0.5rem)',
+      radius: '0.5rem',
     },
     dark: {
       background: 'hsl(20 14.3% 4.1%)',
@@ -209,7 +209,7 @@ const themes = {
       border: 'hsl(240 5.9% 90%)',
       input: 'hsl(240 5.9% 90%)',
       ring: 'hsl(240 5.9% 10%)',
-      radius: 'hsl(0.5rem)',
+      radius: '0.5rem',
     },
     dark: {
       background: 'hsl(240 10% 3.9%)',
@@ -259,7 +259,7 @@ const themes = {
       chart3: 'hsl(197 37% 24%)',
       chart4: 'hsl(43 74% 66%)',
       chart5: 'hsl(27 87% 67%)',
-      radius: 'hsl(0.5rem)',
+      radius: '0.5rem',
     },
     dark: {
       background: 'hsl(224 71.4% 4.1%)',
@@ -314,7 +314,7 @@ const themes = {
       chart3: 'hsl(197 37% 24%)',
       chart4: 'hsl(43 74% 66%)',
       chart5: 'hsl(27 87% 67%)',
-      radius: 'hsl(0.5rem)',
+      radius: '0.5rem',
     },
     dark: {
       background: 'hsl(0 0% 100%)',
@@ -341,7 +341,7 @@ const themes = {
       chart3: 'hsl(197 37% 24%)',
       chart4: 'hsl(43 74% 66%)',
       chart5: 'hsl(27 87% 67%)',
-      radius: 'hsl(0.5rem)',
+      radius: '0.5rem',
     },
   },
 };
