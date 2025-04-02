@@ -47,6 +47,7 @@ import { AlertDialogTriggerComponent } from './components/alert-dialog/alert-dia
 import { AlertDialogTitleComponent } from './components/alert-dialog/alert-dialog-title/alert-dialog-title.component';
 import { SwitchComponent } from './components/switch/switch.component';
 import { ProgressComponent } from './components/progress/progress.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 const components = [
   ButtonComponent,
@@ -97,7 +98,8 @@ const components = [
   AlertDialogTriggerComponent,
   AlertDialogTitleComponent,
   SwitchComponent,
-  ProgressComponent
+  ProgressComponent,
+  SliderComponent,
 ]
 
 @NgModule({

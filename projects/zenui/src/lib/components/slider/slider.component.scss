@@ -1,0 +1,55 @@
+input[type=range] {
+    -webkit-appearance: none; // Removes default styles for WebKit browsers
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: #e0e0e0;
+    outline: none;
+    transition: background 0.3s;
+    color:red;
+  
+    &:hover {
+      background: #d4d4d4;
+    }
+
+    &:disabled{
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+    
+    /* Customizing the slider thumb (handle) */
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      background: #007bff;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s;
+  
+      &:hover {
+        background: #0056b3;
+      }
+    }
+  
+    &::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      background: #007bff;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  
+    /* Active state */
+    &:active::-webkit-slider-thumb {
+      background: #004494;
+
+    }
+  
+    &:active::-moz-range-thumb {
+      background: #004494;
+    }
+  }
+  

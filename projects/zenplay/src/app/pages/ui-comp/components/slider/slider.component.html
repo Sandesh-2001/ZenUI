@@ -1,0 +1,39 @@
+<div class="container">
+
+    <form [formGroup]="reactiveSlider" (ngSubmit)="onReactiveSubmit()">
+        <fieldset>
+            <legend>Reactive Forms</legend>
+            <p>{{reactiveSlider.value| json}}</p>
+                <!-- <input type="radio" formControlName="gender" [value]="item" /> -->
+                <zen-slider [id]="'reactive_slider'" formControlName="value" name="value" [min]="'1'" [max]="'100'" [value]="'5'" [disabled]="true"  />
+                <zen-label [for]="'reactive_slider'">
+                    Reactive slider
+                </zen-label>
+            <p>Selected value : {{reactiveSlider.value.value}}</p>
+
+
+            <zen-slider [id]="'reactive_slider_volume'" formControlName="volume" name="volume" [min]="'1'" [max]="'100'" [value]="'5'"   />
+            <zen-label [for]="'reactive_slider_volume'">
+                Volume
+            </zen-label>
+        <p>Selected volume : {{reactiveSlider.value.volume}}</p>
+            <zen-button [type]="'submit'" >Submit</zen-button>
+
+        </fieldset>
+    </form>
+
+    <form #sliderTemplate="ngForm" (ngSubmit)="templateSubmit()" >
+        <fieldset>
+            <legend>Template Driven Form</legend>
+                <zen-slider [id]="'template_slider'" [step]="'1'" [value]="'40'" [(ngModel)]="templateSlider.value" [name]="'gender'">
+                    
+                </zen-slider>
+                <zen-label [for]="'template_slider'"   >
+                    Range Label
+                </zen-label>
+            <p>Selected value : {{templateSlider.value| json}}</p>
+            <zen-button [type]="'submit'">Submit</zen-button>
+        </fieldset>
+    </form>
+</div>
+
