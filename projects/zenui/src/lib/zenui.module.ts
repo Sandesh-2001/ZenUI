@@ -23,7 +23,8 @@ import { PasswordComponent } from './components/password/password.component';
 import { InputComponent } from './components/input/input.component';
 import { LabelComponent } from './components/label/label.component';
 import { DatePickerComponent } from './components/date-picker/date-picker.component';
-import { AccordionComponent } from './components/accordion/accordion.component';
+import { AccordionComponent } from './components/accordion/accordion/accordion.component';
+import { AccordionItemComponent } from './components/accordion/accordion-item/accordion-item.component';
 import { BadgeComponent } from './components/badge/badge.component';
 import { MenubarContentComponent } from './components/menubar/menubar-content/menubar-content.component';
 import { MenubarItemComponent } from './components/menubar/menubar-item/menubar-item.component';
@@ -46,6 +47,7 @@ import { AlertDialogTriggerComponent } from './components/alert-dialog/alert-dia
 import { AlertDialogTitleComponent } from './components/alert-dialog/alert-dialog-title/alert-dialog-title.component';
 import { SwitchComponent } from './components/switch/switch.component';
 import { ProgressComponent } from './components/progress/progress.component';
+import { SliderComponent } from './components/slider/slider.component';
 import { TabsComponent } from './components/tabs/tabs/tabs.component';
 import { TabsContentComponent } from './components/tabs/tabs-content/tabs-content.component';
 import { TabsTriggerComponent } from './components/tabs/tabs-trigger/tabs-trigger.component';
@@ -80,6 +82,7 @@ const components = [
   LabelComponent,
   DatePickerComponent,
   AccordionComponent,
+  AccordionItemComponent,
   BadgeComponent,
   MenubarContentComponent,
   MenubarItemComponent,
@@ -102,6 +105,7 @@ const components = [
   AlertDialogTitleComponent,
   SwitchComponent,
   ProgressComponent,
+  SliderComponent,
   TabsComponent,
   TabsContentComponent,
   TabsTriggerComponent,

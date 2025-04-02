@@ -100,6 +100,11 @@ export class SidebarComponent {
       icon: "fa fa-circle"
     },
     {
+      path: "slider",
+      title: "Slider",
+      icon:"fa fa-circle"
+    },
+    {
       path : "tabs",
       title: "Tabs",
       icon : "fa fa-circle"
