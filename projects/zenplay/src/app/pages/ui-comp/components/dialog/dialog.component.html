@@ -1,20 +1,17 @@
-<zen-button [color]="'primary'" (clickEvent)="onOpenModal()" >Open modal</zen-button>
+<zen-button [color]="'primary'" (clickEvent)="onOpenModal()">Open modal</zen-button>
 <zen-dialog [isOpen]="openModal">
     <zen-dialog-header (close)="close($event)">
         Dialog
     </zen-dialog-header>
     <zen-dialog-body>
         <form action="" #testForm='ngForm' (ngSubmit)="testSubmit(testForm)">
-            <zen-label for="name"  >Name</zen-label>
-            <zen-input #name [size]="'full'"  type="text" [(ngModel)]="dialogForm.name" [name]="'name'"  />
+            <zen-label for="name">Name</zen-label>
+            <zen-input #name [size]="'full'" type="text" [(ngModel)]="dialogForm.name" [name]="'name'" />
             <zen-label for="age">Age</zen-label>
-            <zen-input #age [size]="'full'" type="number" [(ngModel)]="dialogForm.age" [name]="'age'"  />
-            <button>submit</button>
+            <zen-input #age [size]="'full'" type="number" [(ngModel)]="dialogForm.age" [name]="'age'" />
         </form>
         <!-- need to replace with zen-label -->
     </zen-dialog-body>
     <zen-dialog-footer (close)="close($event)" (confirm)="confirm($event)">
     </zen-dialog-footer>
 </zen-dialog>
-
-

@@ -5,104 +5,109 @@ import { RouterModule } from '@angular/router';
   selector: 'app-sidebar',
   imports: [RouterModule],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss'
+  styleUrl: './sidebar.component.scss',
 })
 export class SidebarComponent {
-  links:any[] = [
+  links: any[] = [
     {
-      path: "/dashboard/button",
-      title: "Button",
-      icon: "fa fa-circle"
+      path: '/dashboard/button',
+      title: 'Button',
+      icon: 'fa fa-circle',
     },
     {
-      path: "/dashboard/file-upload",
-      title: "File Upload",
-      icon: "fa fa-file"
+      path: '/dashboard/file-upload',
+      title: 'File Upload',
+      icon: 'fa fa-file',
     },
     {
-      path: "/dashboard/card",
-      title: "Card",
-      icon: "fa fa-circle"
+      path: '/dashboard/card',
+      title: 'Card',
+      icon: 'fa fa-circle',
     },
     {
-      path: "/dashboard/dialog",
-      title: "Dialog",
-      icon: "fa fa-circle"
+      path: '/dashboard/dialog',
+      title: 'Dialog',
+      icon: 'fa fa-circle',
     },
     {
-      path: "/dashboard/chips",
-      title: "Chips",
-      icon: "fa fa-circle"
+      path: '/dashboard/chips',
+      title: 'Chips',
+      icon: 'fa fa-circle',
     },
     {
-      path: "/dashboard/input",
-      title: "Input",
-      icon: "fa fa-circle"
+      path: '/dashboard/input',
+      title: 'Input',
+      icon: 'fa fa-circle',
     },
     {
       path: '/dashboard/password',
-      title: "Password",
-      icon: ""
+      title: 'Password',
+      icon: '',
     },
     {
       path: '/dashboard/radio',
-      title: "Radio",
-      icon: "fa fa-circle"
+      title: 'Radio',
+      icon: 'fa fa-circle',
     },
     {
-      path: "/dashboard/checkbox",
-      title: "Checkbox",
-      icon: "fa fa-circle"
+      path: '/dashboard/checkbox',
+      title: 'Checkbox',
+      icon: 'fa fa-circle',
     },
     {
-      path : "textarea",
-      title : "Textarea",
-      icon: "fa fa-circle"
+      path: 'textarea',
+      title: 'Textarea',
+      icon: 'fa fa-circle',
     },
     {
-      path : "color-picker",
-      title: "Color Picker",
-      icon: "fa fa-circle"
+      path: 'color-picker',
+      title: 'Color Picker',
+      icon: 'fa fa-circle',
     },
     {
-      path : "date-picker",
-      title: "Date Picker",
-      icon: "fa fa-circle"
+      path: 'date-picker',
+      title: 'Date Picker',
+      icon: 'fa fa-circle',
     },
     {
-      path : "accordion",
-      title : "Accordion",
-      icon: "fa fa-circle"
+      path: 'accordion',
+      title: 'Accordion',
+      icon: 'fa fa-circle',
     },
     {
-      path : "badge",
-      title : "Badge",
-      icon: "fa fa-circle"
+      path: 'badge',
+      title: 'Badge',
+      icon: 'fa fa-circle',
     },
     {
-      path : "menubar",
-      title: "Menubar",
-      icon: "fa fa-circle"
+      path: 'menubar',
+      title: 'Menubar',
+      icon: 'fa fa-circle',
     },
     {
-      path : "alert-dialog",
-      title : "Alert Dialog",
-      icon: "fa fa-circle"
+      path: 'alert-dialog',
+      title: 'Alert Dialog',
+      icon: 'fa fa-circle',
     },
     {
-      path : "switch",
-      title : "Switch",
-      icon : "fa fa-circle"
+      path: 'switch',
+      title: 'Switch',
+      icon: 'fa fa-circle',
     },
     {
-      path : "progress",
-      title : "Progress",
-      icon: "fa fa-circle"
+      path: 'progress',
+      title: 'Progress',
+      icon: 'fa fa-circle',
     },
     {
-      path: "slider",
-      title: "Slider",
-      icon:"fa fa-circle"
-    }
+      path: 'slider',
+      title: 'Slider',
+      icon: 'fa fa-circle',
+    },
+    {
+      path: 'toastr',
+      title: 'Toastr',
+      icon: 'fa fa-circle',
+    },
   ];
 }

@@ -48,6 +48,9 @@ import { AlertDialogTitleComponent } from './components/alert-dialog/alert-dialo
 import { SwitchComponent } from './components/switch/switch.component';
 import { ProgressComponent } from './components/progress/progress.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { ToastrComponent } from './components/toastr/toastr.component';
+import { ToastrHeaderComponent } from './components/toastr/toastr-header/toastr-header.component';
+import { ToastrBodyComponent } from './components/toastr/toastr-body/toastr-body.component';
 
 const components = [
   ButtonComponent,
@@ -100,6 +103,9 @@ const components = [
   SwitchComponent,
   ProgressComponent,
   SliderComponent,
+  ToastrComponent,
+  ToastrHeaderComponent,
+  ToastrBodyComponent
 ]
 
 @NgModule({

@@ -5,16 +5,16 @@ import { ButtonComponent } from '../../button/button.component';
   selector: 'zen-dialog-footer',
   imports: [ButtonComponent],
   templateUrl: './dialog-footer.component.html',
-  styleUrl: './dialog-footer.component.scss'
+  styleUrl: './dialog-footer.component.scss',
 })
 export class DialogFooterComponent {
   @Output('close') cancel = new EventEmitter<any>();
   @Output('confirm') confirm = new EventEmitter<any>();
 
-  onConfirm(event:any){
-    this.confirm.emit(event)
+  onConfirm(event: any) {
+    this.confirm.emit(event);
   }
-  onCancel(event:any){
-    this.cancel.emit(event)
+  onCancel(event: any) {
+    this.cancel.emit(event);
   }
 }

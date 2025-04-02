@@ -1,0 +1,10 @@
+<zen-button (clickEvent)="openToastr= true" >Open Toastr</zen-button>
+
+<zen-toastr [open]="openToastr">
+    <zen-toastr-header (close)="close($event)" > Toastr header</zen-toastr-header>
+    <zen-toastr-body>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus amet quia unde beatae quas veniam
+            blanditiis, laudantium ab minima delectus debitis rem dicta nobis deserunt sed architecto, pariatur earum
+            in!
+    </zen-toastr-body>
+</zen-toastr>
