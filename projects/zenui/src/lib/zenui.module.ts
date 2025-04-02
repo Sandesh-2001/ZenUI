@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { inject, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './components/button/button.component';
 import { SelectComponent } from './components/select/select.component';
@@ -48,6 +48,12 @@ import { AlertDialogTitleComponent } from './components/alert-dialog/alert-dialo
 import { SwitchComponent } from './components/switch/switch.component';
 import { ProgressComponent } from './components/progress/progress.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { TabsComponent } from './components/tabs/tabs/tabs.component';
+import { TabsContentComponent } from './components/tabs/tabs-content/tabs-content.component';
+import { TabsTriggerComponent } from './components/tabs/tabs-trigger/tabs-trigger.component';
+import { TabsListComponent } from './components/tabs/tabs-list/tabs-list.component';
+import { TooltipComponent } from './components/tooltip/tooltip/tooltip.component';
+import { TooltipDirective } from './components/tooltip/tooltip.directive';
 
 const components = [
   ButtonComponent,
@@ -100,6 +106,12 @@ const components = [
   SwitchComponent,
   ProgressComponent,
   SliderComponent,
+  TabsComponent,
+  TabsContentComponent,
+  TabsTriggerComponent,
+  TabsListComponent,
+  TooltipComponent,
+  TooltipDirective
 ]
 
 @NgModule({
@@ -113,4 +125,4 @@ const components = [
     ...components
   ]
 })
-export class ZenUiModule { }
+export class ZenUiModule {}
