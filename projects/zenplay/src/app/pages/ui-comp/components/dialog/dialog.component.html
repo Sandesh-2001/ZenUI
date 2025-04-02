@@ -4,11 +4,14 @@
         Dialog
     </zen-dialog-header>
     <zen-dialog-body>
+        <form action="" #testForm='ngForm' (ngSubmit)="testSubmit(testForm)">
+            <zen-label for="name"  >Name</zen-label>
+            <zen-input #name [size]="'full'"  type="text" [(ngModel)]="dialogForm.name" [name]="'name'"  />
+            <zen-label for="age">Age</zen-label>
+            <zen-input #age [size]="'full'" type="number" [(ngModel)]="dialogForm.age" [name]="'age'"  />
+            <button>submit</button>
+        </form>
         <!-- need to replace with zen-label -->
-        <zen-label for="name"  >Name</zen-label>
-        <zen-input [size]="'full'" type="text"  placeholder="Title"/>
-        <zen-label for="age">Age</zen-label>
-        <zen-input [size]="'full'" type="text"  placeholder="Title"/>
     </zen-dialog-body>
     <zen-dialog-footer (close)="close($event)" (confirm)="confirm($event)">
     </zen-dialog-footer>

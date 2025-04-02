@@ -31,7 +31,7 @@ export class SliderComponent {
     setTimeout(() => {
       console.log('oninit', this.value)
       this.onChange(this.value)
-    }, 3000);
+    }, 0);
   }
   
   writeValue(value: string): void {
