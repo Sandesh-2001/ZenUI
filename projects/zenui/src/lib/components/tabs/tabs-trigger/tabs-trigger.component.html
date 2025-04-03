@@ -1,0 +1,4 @@
+<input type="radio" class="tab" [id]="value" name="tab" [checked]="isActive()" (change)="selectTab()">
+<label class="tab_label" [for]="value">
+  <ng-content></ng-content>
+</label>

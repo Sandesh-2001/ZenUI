@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ThemeService } from '../../../services/theme.service';
 
 @Component({
   selector: 'zen-card',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
+    themeService = inject(ThemeService);
+
+    ngOnInit(){
+      this.themeService.setTheme("Blue");
+    }
 
 }

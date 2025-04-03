@@ -111,8 +111,23 @@ export class SidebarComponent {
     },
     {
       path: 'hot-toastr',
-      title: "Hot toastr",
-      icon: "fa fa-circle"
-    }
+      title: 'Hot toastr',
+      icon: 'fa fa-circle',
+    },
+    {
+      path: 'slider',
+      title: 'Slider',
+      icon: 'fa fa-circle',
+    },
+    {
+      path: 'tabs',
+      title: 'Tabs',
+      icon: 'fa fa-circle',
+    },
+    {
+      path: 'tooltip',
+      title: 'Tooltip',
+      icon: 'fa fa-circle',
+    },
   ];
 }
