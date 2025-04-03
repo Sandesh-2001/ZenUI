@@ -1,5 +1,5 @@
 @if (open) {
-    <div class="toastr">
+    <div #toastr class="toastr" [ngClass]="position">
         <!-- <div class="toastr_header">
             <ng-content  select="[header]"></ng-content>
             <zen-button [size]="'sm'" class="toastr_close" ><i class="fa-solid fa-xmark" ></i></zen-button>

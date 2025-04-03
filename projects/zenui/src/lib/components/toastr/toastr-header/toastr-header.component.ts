@@ -8,8 +8,12 @@ import { ButtonComponent } from "../../button/button.component";
   styleUrl: './toastr-header.component.scss'
 })
 export class ToastrHeaderComponent {
-  @Output('close') close : any = new EventEmitter<boolean>();
+  @Output('close') close : EventEmitter<boolean> = new EventEmitter<boolean>();
 
+
+  ngOnInit(){
+    
+  }
   onCancel(){
     this.close.emit(false)
   }

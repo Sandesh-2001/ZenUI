@@ -1,7 +1,42 @@
-<zen-button (clickEvent)="openToastr= true" >Open Toastr</zen-button>
+<zen-button (clickEvent)="openToastr('top_left')" >Open top left</zen-button>
 
-<zen-toastr [open]="openToastr">
-    <zen-toastr-header (close)="close($event)" > Toastr header</zen-toastr-header>
+<zen-button (clickEvent)="openToastrTopRight= true" >Open top right</zen-button>
+
+<zen-button (clickEvent)="openToastrBottomLeft= true" >Open bottom left</zen-button>
+
+<zen-button (clickEvent)="openToastrBottomRigth= true" >Open bottom right</zen-button>
+
+
+
+<zen-toastr [open]="openToastrTopLeft" [position]="'top_left'" >
+    <zen-toastr-header (close)="closeTopLeft($event)" > Toastr top left</zen-toastr-header>
+    <zen-toastr-body>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus amet quia unde beatae quas veniam
+            blanditiis, laudantium ab minima delectus debitis rem dicta nobis deserunt sed architecto, pariatur earum
+            in!
+    </zen-toastr-body>
+</zen-toastr>
+
+<zen-toastr [open]="openToastrTopRight" [position]="'top_right'" >
+    <zen-toastr-header (close)="closeTopRight($event)" > Toastr top left</zen-toastr-header>
+    <zen-toastr-body>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus amet quia unde beatae quas veniam
+            blanditiis, laudantium ab minima delectus debitis rem dicta nobis deserunt sed architecto, pariatur earum
+            in!
+    </zen-toastr-body>
+</zen-toastr>
+
+<zen-toastr [open]="openToastrBottomLeft" [position]="'bottom_left'" >
+    <zen-toastr-header (close)="closeBottomLeft($event)" > Toastr top left</zen-toastr-header>
+    <zen-toastr-body>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus amet quia unde beatae quas veniam
+            blanditiis, laudantium ab minima delectus debitis rem dicta nobis deserunt sed architecto, pariatur earum
+            in!
+    </zen-toastr-body>
+</zen-toastr>
+
+<zen-toastr [open]="openToastrBottomRigth" [position]="'bottom_right'" >
+    <zen-toastr-header (close)="closeBottomRight($event)" > Toastr top left</zen-toastr-header>
     <zen-toastr-body>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus amet quia unde beatae quas veniam
             blanditiis, laudantium ab minima delectus debitis rem dicta nobis deserunt sed architecto, pariatur earum
