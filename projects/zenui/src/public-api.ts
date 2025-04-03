@@ -59,3 +59,10 @@ export { TabsListComponent } from './lib/components/tabs/tabs-list/tabs-list.com
 export { TooltipComponent } from './lib/components/tooltip/tooltip/tooltip.component';
 export { TooltipDirective } from './lib/components/tooltip/tooltip.directive';
 export { TableComponent } from './lib/components/table/table.component';
+export { ToastrService} from "./lib/components/hot-toastr/services/toastr.service";
+export { SliderComponent } from './lib/components/slider/slider.component';
+export { ToastrComponent } from './lib/components/toastr/toastr.component';
+export { ToastrHeaderComponent } from './lib/components/toastr/toastr-header/toastr-header.component';
+export { ToastrBodyComponent } from './lib/components/toastr/toastr-body/toastr-body.component';
+export { HotToastrComponent } from './lib/components/hot-toastr/hot-toastr.component';
+export {AccordionItemComponent} from "./lib/components/accordion/accordion-item/accordion-item.component"
