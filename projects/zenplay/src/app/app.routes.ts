@@ -23,6 +23,7 @@ import { TabsComponent } from './pages/ui-comp/components/tabs/tabs.component';
 import { TooltipComponent } from './pages/ui-comp/components/tooltip/tooltip.component';
 import { ToastrComponent } from './pages/ui-comp/components/toastr/toastr.component';
 import { HotToastrComponent } from './pages/ui-comp/components/hot-toastr/hot-toastr.component';
+import { TableComponent } from './pages/ui-comp/components/table/table.component';
 
 export const routes: Routes = [
   {
@@ -99,37 +100,41 @@ export const routes: Routes = [
         component: MenubarComponent,
       },
       {
-        path : "alert-dialog",
-        component : AlertDialogComponent
+        path: 'alert-dialog',
+        component: AlertDialogComponent,
       },
       {
-        path : "switch",
-        component : SwitchComponent
+        path: 'switch',
+        component: SwitchComponent,
       },
       {
-        path : "progress",
-        component : ProgressComponent
+        path: 'progress',
+        component: ProgressComponent,
       },
       {
-        path:"slider",
+        path: 'slider',
         component: SliderComponent,
       },
       {
-        path : "tabs",
-        component : TabsComponent
+        path: 'tabs',
+        component: TabsComponent,
       },
       {
-        path : "tooltip",
-        component : TooltipComponent
+        path: 'tooltip',
+        component: TooltipComponent,
       },
       {
-        path: "toastr",
-        component: ToastrComponent
+        path: 'toastr',
+        component: ToastrComponent,
       },
       {
-        path:'hot-toastr',
-        component: HotToastrComponent
-      }
+        path: 'hot-toastr',
+        component: HotToastrComponent,
+      },
+      {
+        path: 'table',
+        component: TableComponent,
+      },
     ],
   },
 ];

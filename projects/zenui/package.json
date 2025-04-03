@@ -3,10 +3,10 @@
   "version": "0.1.1",
   "peerDependencies": {
     "@angular/common": "^19.2.0",
-    "@angular/core": "^19.2.0"
+    "@angular/core": "^19.2.0",
+    "ngx-colors": "^3.6.0"
   },
   "dependencies": {
-    "ngx-colors": "^3.6.0",
     "tslib": "^2.3.0"
   },
   "sideEffects": false
