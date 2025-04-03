@@ -8,3 +8,4 @@ export * from './lib/zenui.module';
 
 export {ButtonComponent} from './lib/components/button/button.component';
 export { FileComponent } from "./lib/components/file/file.component"
+export { ToastrService} from "./lib/components/hot-toastr/services/toastr.service";

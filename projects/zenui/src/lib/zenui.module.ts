@@ -51,6 +51,12 @@ import { SliderComponent } from './components/slider/slider.component';
 import { ToastrComponent } from './components/toastr/toastr.component';
 import { ToastrHeaderComponent } from './components/toastr/toastr-header/toastr-header.component';
 import { ToastrBodyComponent } from './components/toastr/toastr-body/toastr-body.component';
+import { ToastrService } from './components/hot-toastr/services/toastr.service';
+import { HotToastrComponent } from './components/hot-toastr/hot-toastr.component';
+
+const services = [
+  ToastrService
+]
 
 const components = [
   ButtonComponent,
@@ -105,18 +111,25 @@ const components = [
   SliderComponent,
   ToastrComponent,
   ToastrHeaderComponent,
-  ToastrBodyComponent
+  ToastrBodyComponent,
+  HotToastrComponent
 ]
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    
+  ],
   imports: [
     CommonModule,
-    ...components
+    ...components,
+
+  ],
+  providers:[
+    ToastrService
   ],
   exports: [
     FileComponent,
-    ...components
+    ...components,
   ]
 })
 export class ZenUiModule { }

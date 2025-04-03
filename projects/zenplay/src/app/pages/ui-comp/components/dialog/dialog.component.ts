@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { ZenUiModule } from '../../../../../../../zenui/src/public-api';
+import { ToastrService, ZenUiModule } from '../../../../../../../zenui/src/public-api';
 import { FormsModule, NgForm } from '@angular/forms';
 import { JsonPipe } from '@angular/common';
 
@@ -19,6 +19,10 @@ export class DialogComponent {
   openModal:boolean = false;
   dialogForm:dialogForm = {name: "", age: 0}
   @ViewChild('name')name!: ElementRef
+
+  constructor(private toastrService: ToastrService){
+
+  }
   onOpenModal(){
     this.openModal = true;
   }
@@ -28,9 +32,10 @@ export class DialogComponent {
     this.dialogForm = structuredClone({name:"", age: 0})
     this.openModal = false;
   }
-
+  
   close(event:any){
-    this.openModal = false
+    this.toastrService.showToastr("Dialog confirmed", "success")
+    // this.openModal = false
     
   }
   testSubmit(form:NgForm){

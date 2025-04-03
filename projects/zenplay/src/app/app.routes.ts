@@ -20,6 +20,7 @@ import { SwitchComponent } from './pages/ui-comp/components/switch/switch.compon
 import { ProgressComponent } from './pages/ui-comp/components/progress/progress.component';
 import { SliderComponent } from './pages/ui-comp/components/slider/slider.component';
 import { ToastrComponent } from './pages/ui-comp/components/toastr/toastr.component';
+import { HotToastrComponent } from './pages/ui-comp/components/hot-toastr/hot-toastr.component';
 
 export const routes: Routes = [
   {
@@ -115,6 +116,10 @@ export const routes: Routes = [
         path: "toastr",
         component: ToastrComponent
       },
+      {
+        path:'hot-toastr',
+        component: HotToastrComponent
+      }
     ],
   },
 ];

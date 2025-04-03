@@ -109,5 +109,10 @@ export class SidebarComponent {
       title: 'Toastr',
       icon: 'fa fa-circle',
     },
+    {
+      path: 'hot-toastr',
+      title: "Hot toastr",
+      icon: "fa fa-circle"
+    }
   ];
 }
