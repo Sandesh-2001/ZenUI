@@ -113,6 +113,11 @@ export class SidebarComponent {
       path : "tooltip",
       title: "Tooltip",
       icon : "fa fa-circle"
+    },
+    {
+      path : "table",
+      title: "Table",
+      icon : "fa fa-circle"
     }
   ];
 }

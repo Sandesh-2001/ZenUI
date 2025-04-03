@@ -13,8 +13,10 @@ export class TabsComponent {
   private tabsService = inject(TabsService);
 
   constructor() {
-    // Initialize the active tab in the service
-    this.tabsService.setActiveTab(this.defaultValue);
+    setTimeout(() => {
+      // Initialize the active tab in the service
+      this.tabsService.setActiveTab(this.defaultValue);
+    }, 0);
   }
 
   /** Registers a new tab in the list */
