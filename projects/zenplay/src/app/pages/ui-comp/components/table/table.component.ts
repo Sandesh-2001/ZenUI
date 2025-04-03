@@ -1,11 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { ZenUiModule } from '../../../../../../../zenui/src/public-api';
 import { HttpClient } from '@angular/common/http';
-import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-table',
-  imports: [ZenUiModule, NgClass],
+  imports: [ZenUiModule],
   templateUrl: './table.component.html',
   styleUrl: './table.component.scss',
 })
