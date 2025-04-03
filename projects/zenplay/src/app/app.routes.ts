@@ -121,7 +121,6 @@ export const routes: Routes = [
       {
         path : "tooltip",
         component : TooltipComponent
-        component: SliderComponent
       },
       {
         path: "toastr",
