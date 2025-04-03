@@ -1,1 +1,11 @@
-<zen-table></zen-table>
+<zen-table
+  [rows]="tableData"
+  [columns]="columns"
+  [page]="page"
+  [isLoading]="isLoading"
+  (onPageChange)="onPageChange($event)"
+  (onRowSelectionChange)="onSelectionChange($event)"
+  (onSortChange)="handleSortChange($event)"
+  [sorts]="sorts"
+  [checkBoxFixedPosition]="checkBoxFixedPosition"
+></zen-table>

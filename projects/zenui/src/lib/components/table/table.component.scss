@@ -10,3 +10,16 @@
     border-top: 1px solid #d9d8d9;
     border-bottom: none;
 }
+
+.icon {
+    position: absolute;
+  }
+  .datatable-icon-down {
+    top: 0px;
+  }
+  .datatable-icon-up {
+    top: 40px;
+  }
+  .dragFromLeft .icon {
+    left: -13px;
+  }

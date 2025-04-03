@@ -1,10 +1,10 @@
 <ngx-datatable
   class="material"
-  [rows]="tempRows"
-  [columnMode]="'force'"
+  [rows]="rows"
+  [columnMode]="ColumnMode.force"
   [headerHeight]="48"
   [footerHeight]="50"
-  rowHeight="auto"
+  [rowHeight]="rowHeight"
   [selected]="selectedRows"
   [selectionType]="SelectionType.checkbox"
   [selectAllRowsOnPage]="true"
@@ -13,20 +13,56 @@
   [count]="page.totalElements"
   [offset]="page.pageNumber"
   [limit]="page.size"
-  (page)="setPage($event)"
+  [scrollbarH]="true"
   [ghostLoadingIndicator]="isLoading"
+  (page)="setPage($event)"
+  (sort)="onSort($event)"
+  [swapColumns]="swapColumns"
+  [targetMarkerTemplate]="targetMarkerTemplate"
+  [reorderable]="reorderable"
+  (cdkDropListDropped)="drop($event)"
+  cdkDropList
+  [enableClearingSortState]="true"
+  [sorts]="sorts"
 >
+  @if (reorderable) {
+  <ng-template rowDef>
+    <datatable-row-def cdkDrag [cdkDragPreviewContainer]="'parent'" />
+  </ng-template>
+  }
+
   <ngx-datatable-column
-    [width]="30"
     [sortable]="false"
     [canAutoResize]="false"
-    [draggable]="false"
+    [draggable]="true"
     [resizeable]="false"
     [headerCheckboxable]="true"
     [checkboxable]="true"
+    [frozenLeft]="checkBoxFixedPosition === 'left'"
+    [frozenRight]="checkBoxFixedPosition === 'right'"
+    [width]="'auto'"
   >
   </ngx-datatable-column>
   @for (item of columns; track $index) {
-      <ngx-datatable-column [name]="item.prop"></ngx-datatable-column>
+  <ngx-datatable-column
+    [name]="item.title"
+    [sortable]="item.sortable !== false"
+    [frozenLeft]="item.frozenLeft"
+    [width]="item.width || 'auto'"
+    [comparator]="item.comparator ? item.comparator : undefined"
+  >
+    >
+  </ngx-datatable-column>
   }
+  <div empty-content style="text-align: center; margin: 60px 0px">
+    {{ "No data available" }} <br />
+    {{ "Try adjusting filters or adding new records." }}
+  </div>
 </ngx-datatable>
+
+<ng-template #targetMarkerTemplate let-class="class">
+  <div [ngClass]="class">
+    <div class="icon datatable-icon-down"></div>
+    <div class="icon datatable-icon-up"></div>
+  </div>
+</ng-template>
