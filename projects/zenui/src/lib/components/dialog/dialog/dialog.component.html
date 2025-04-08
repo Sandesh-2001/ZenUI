@@ -1,7 +1,7 @@
-<div class="zen-dialog-backdrop"  *ngIf="isOpen">
-    <div class="zen-dialog" id="dialog" (click)="$event.stopPropagation()">
-      <ng-content select="zen-dialog-header"></ng-content>
-      <ng-content select="zen-dialog-body"></ng-content>
-      <ng-content select="zen-dialog-footer"></ng-content>
-    </div>
+<div class="zen-dialog-backdrop" *ngIf="isOpen">
+  <div class="zen-dialog" id="dialog" (click)="$event.stopPropagation()">
+    <ng-content select="zen-dialog-header"></ng-content>
+    <ng-content select="zen-dialog-body"></ng-content>
+    <ng-content select="zen-dialog-footer"></ng-content>
   </div>
+</div>
