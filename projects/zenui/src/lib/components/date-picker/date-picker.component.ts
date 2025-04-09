@@ -91,6 +91,7 @@ export class DatePickerComponent implements ControlValueAccessor {
     this.onChange(this.selectedDate);
     this.onTouched();
     this.showDatepicker = false;
+    this.defaultDate = new Date(this.selectedDate);
   }
 
   @HostListener('document:click', ['$event'])
